@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "badminton4u.ru parsing",
+  "keywords": [
+    "badminton4u"
+  ],
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "den",
+  "author": "den <denis.vinokurov@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "*",
