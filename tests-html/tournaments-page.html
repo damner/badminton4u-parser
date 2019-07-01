@@ -1,0 +1,879 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://badminton4u.ru/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="бадминтон, турниры по бадминтону, любительский бадминтон, бадминтон в москве, поиграть в бадминтон">
+    <meta name="description" content="Любительская ассоциация бадминтона">
+    <meta name="yandex-verification" content="25f234eabd2bc1aa" />
+    <title>Прошедшие турниры | Любительская ассоциация бадминтона</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    <link type="text/css" rel="stylesheet" href="plugins/jquery/jquery-ui/jquery-ui-1.10.4.custom.min.css">
+    <!--<link href="css/base.css" rel="stylesheet">-->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery-ui/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/online.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body onload="">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43621964 = new Ya.Metrika({
+                    id:43621964,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43621964" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<div class="popup-overlay"></div>
+<div class="login-popup-form">
+    <div class="popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Вход на сайт</h2></div>
+
+    <form action="/tours/?past" method="post">
+        <input type="text" name="login" placeholder="Логин">
+        <input type="password" name="password" placeholder="Пароль">
+        <a href="forgot/" class="bl">Забыли пароль?</a>
+        <input type="submit" class="button" value="Войти" style="margin-top:10px;">
+    </form>
+</div>
+
+
+<div class="mail-2-popup-overlay">	</div>
+<div class="mail-2-popup-form">
+    <div class="mail-2-popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Отправка личного сообщения</h2></div>
+    <form action="messages/" method="post">
+        <input type="hidden" name="player_id" value="" id="mail-popup-player">
+        <div class="adr">Сообщение для: <img class="userpic" src="" alt="" id="mail-popup-img"><span id="mail-popup-span">Николай Иванов (<a href="" class="username">Brad</a>)</span></div>
+        <!--<input type="text" placeholder="Кому">-->
+        <textarea placeholder="Текст сообщения" name="text"></textarea>
+        <input type="submit" class="button" value="Отправить">
+    </form>
+</div>
+
+<div class="mail-3-popup-overlay">	</div>
+<div class="mail-3-popup-form">
+    <div class="mail-3-popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Редактирование сообщения</h2></div>
+    <input type="hidden" name="player_id" value="" id="mail-popup-player">
+    <textarea placeholder="Текст сообщения" name="text" id="mail-3-popup-text" mes_id=""></textarea>
+    <input type="button" class="button" value="Сохранить" onclick="editMessage();">
+</div>
+
+<header>
+
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-top-message inline">
+
+                    </div>
+
+                    <div class="header-top-menu inline">
+                        <ul>
+                            <li><a class="to-login">Вход</a></li>
+                            <li><a class="to-register" href="registration/">Регистрация</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="social inline">
+
+                        <a href="https://vk.com/public37641138" target="_blank" class="icon-vk icon-social"></a>
+
+                        <a href="https://www.facebook.com/badminton4u.ru/" target="_blank" class="icon-facebook icon-social"></a>
+
+                        <a href="rss/" target="_blank" class="icon-rss icon-social"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="wrapper">
+                        <div class="logo"><a href="/"></a></div>
+                        <!--<div class="subtitle">Ассоциация<br>настольного тенниса</div>-->
+                    </div>
+                </div>
+
+
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://www.badm.ru/"><img src="../../upload/banners/40.jpg" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://www.prolink.ru/"><img src="../../upload/banners/39.png" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://lining.center/"><img src="../../upload/banners/41.jpg" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="https://badmintonworld.ru/"><img src="../../upload/banners/57.jpg" alt=""></a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div id="main-menu">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="main-menu-wrapper">
+                        <div class="main-menu">
+                            <ul class="inline">
+
+                                <li><a href="tours/">Календарь турниров</a></li>
+
+                                <li><a href="players/">Рейтинг игроков</a></li>
+
+                                <li><a href="forum/">Форум</a></li>
+
+                                <li><a href="places/">Где поиграть?</a></li>
+
+                                <li><a href="photos/">Галерея</a></li>
+
+                                <li><a href="news/">Новости</a></li>
+
+                                <li><a href="content/11">Контакты</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <div id="search-inner">
+                                <form action="/search/" method="get">
+                                    <input type="text" id="search" name="s" value="" placeholder="Поиск по сайту">
+                                    <input type="submit" class="button" value="">
+                                </form>
+                            </div>
+                            <div id="search-btn"><span class="icon-search"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="main-page">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-9">
+                    <div class="main-column">
+
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li class="active">Календарь</li>
+                            </ul>
+                        </div>
+
+                        <div class="calendar-page page" style="margin-top:-20px;">
+                            <!--<div class="title"><h1>Ближайшие турниры</h1></div>-->
+
+                            <!--<div class="calendar-filter">
+                             <form action="">
+                              <label>Тема события</label>
+                              <div class="select-wrapper">
+                               <select name="" id="">
+                                <option>Не выбрано</option>
+                                <option>Тема 1</option>
+                                <option>Тема 2</option>
+                               </select>
+                               <div class="select-button icon-arw-d"> </div>
+                              </div>
+                              <label>Тип события</label>
+                              <div class="select-wrapper">
+                               <select name="" id="">
+                                <option>Не выбрано</option>
+                                <option>Тип 1</option>
+                                <option>Тип 2</option>
+                               </select>
+                               <div class="select-button icon-arw-d"> </div>
+                              </div>
+                             </form>
+                             </div>-->
+                            <div class="calendar-current" style="margin-top:0px;">
+                                <!--<span class="icon-arw-p"></span>Июнь 2015<span class="icon-arw-n"></span>-->
+                            </div>
+                            <div class="calendar-view-tabs" style="margin-top:0px;">
+                                <!--<ul>
+                                 <li{CNT_3DAYS_CLASS}><a href="{CNT_3DAYS_LINK}">3 дня</a></li>
+                                 <li{CNT_WEEK_CLASS}><a href="{CNT_WEEK_LINK}">Неделя</a></li>
+                                 <li{CNT_MONTH_CLASS}><a href="{CNT_MONTH_LINK}">Месяц</a></li>
+                                </ul>-->
+                            </div>
+
+                        </div>
+
+                        <div class="place-page page">
+
+                            <div class="place-tournaments block">
+
+                                <div class="tours-filter">
+                                    <div class="tours-sort-tabs">
+                                        <ul>
+                                            <li><a href="tours/">Ближайшие события</a></li>
+                                            <li><a class="active">Прошедшие турниры</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <table>
+                                    <tr>
+                                        <th colspan="2"><a href="tours/?past&sort=date">дата и время начала &dArr; &uArr;</a></th>
+                                        <th>тип</th>
+                                        <th>турнир</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th style="padding-left:105px;">победитель</th>
+                                        <th><a href="tours/?past&sort=msgs">последнее сообщение &dArr; &uArr;</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">26 Июня (срд) </td>
+                                        <td>20:00</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2527">Парный турнир Ночная лига ХХI</a></td>
+                                        <td class="tournament-icon"><a href="tours/2527" title="участников" class="icon icon-members">12</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2527" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/1266" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Якимов Денис</a><br /><a href="players/4149" class="medal icon-gold nowrap"><img class="userpic" src="../../upload/img/ru/players/mini_4149.jpg" alt="">Миролюбова Елена (<span class="username">Elenamir</span>)</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>16:30</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2526">Двоеборье в NATEN. DB</a></td>
+                                        <td class="tournament-icon"><a href="tours/2526" title="участников" class="icon icon-members">8</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2526" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/6016" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Мастяева Полина (<span class="username">pavelenalav</span>)</a><br /><a href="players/1479" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Трускалов Антон</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>15:30</td>
+                                        <td class="center">xd</td>
+                                        <td class="tournament-name"><a href="tours/2525">Двоеборье в NATEN. XDD</a></td>
+                                        <td class="tournament-icon"><a href="tours/2525" title="участников" class="icon icon-members">10</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2525" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5760" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Лукин Дмитрий</a><br /><a href="players/2850" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Стрелкова Наталия</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>15:30</td>
+                                        <td class="center">xd</td>
+                                        <td class="tournament-name"><a href="tours/2524">Двоеборье в NATEN. XDE</a></td>
+                                        <td class="tournament-icon"><a href="tours/2524" title="участников" class="icon icon-members">8</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2524" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5680" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Белова Наталья</a><br /><a href="players/4377" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Чагуа Важа (<span class="username">vazhenzo</span>)</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>15:00</td>
+                                        <td class="center">xd</td>
+                                        <td class="tournament-name"><a href="tours/2523">Двоеборье в NATEN. XDC</a></td>
+                                        <td class="tournament-icon"><a href="tours/2523" title="участников" class="icon icon-members">30</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2523" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5471" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Дзюба Сергей (<span class="username">sergo1529</span>)</a><br /><a href="players/290" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Рогова Ольга</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>13:00</td>
+                                        <td class="center">md</td>
+                                        <td class="tournament-name"><a href="tours/2522">Двоеборье в NATEN. MDD</a></td>
+                                        <td class="tournament-icon"><a href="tours/2522" title="участников" class="icon icon-members">8</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2522" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5760" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Лукин Дмитрий</a><br /><a href="players/93" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Максютов Ринат</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>13:00</td>
+                                        <td class="center">wd</td>
+                                        <td class="tournament-name"><a href="tours/2521">Двоеборье в NATEN. WDC</a></td>
+                                        <td class="tournament-icon"><a href="tours/2521" title="участников" class="icon icon-members">8</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2521" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/6016" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Мастяева Полина (<span class="username">pavelenalav</span>)</a><br /><a href="players/4475" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Потапова Дарья</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>12:30</td>
+                                        <td class="center">wd</td>
+                                        <td class="tournament-name"><a href="tours/2520">Двоеборье в NATEN. WDE</a></td>
+                                        <td class="tournament-icon"><a href="tours/2520" title="участников" class="icon icon-members">6</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2520" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/6329" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Ракшня Алина</a><br /><a href="players/2802" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Цуприяк Янина</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>12:00</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2519">Двоеборье в NATEN. WDD+MDE+WDE</a></td>
+                                        <td class="tournament-icon"><a href="tours/2519" title="участников" class="icon icon-members">16</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2519" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/4772" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Абатуров Денис</a><br /><a href="players/4377" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Чагуа Важа (<span class="username">vazhenzo</span>)</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">22 Июня (сбт) </td>
+                                        <td>12:00</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2518">Двоеборье в NATEN. MDC+WDB</a></td>
+                                        <td class="tournament-icon"><a href="tours/2518" title="участников" class="icon icon-members">18</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2518" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/4349" class="medal icon-gold"><img class="userpic" src="../../upload/img/ru/players/mini_4349.jpg" alt="">Куликов Олег (<span class="username">Oakulik</span>)</a><br /><a href="players/1474" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Новиков Александр</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">13 Июня (чтв) </td>
+                                        <td></td>
+                                        <td class="center">ms</td>
+                                        <td class="tournament-name"><a href="tours/2539">Вечерняя лига. Одиночки группа С</a></td>
+                                        <td class="tournament-icon"><a href="tours/2539" title="участников" class="icon icon-members">11</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2539" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5810" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Дружинин Антон (<span class="username">DAP25</span>)</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>16:45</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2512">World Gym День России. Парная категория E+</a></td>
+                                        <td class="tournament-icon"><a href="tours/2512" title="участников" class="icon icon-members">14</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2512" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/2050" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Рычков Андрей</a><br /><a href="players/4365" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Пчелкина Евгения</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>16:30</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2511">World Gym День России. Парная категория F+</a></td>
+                                        <td class="tournament-icon"><a href="tours/2511" title="участников" class="icon icon-members">16</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2511" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5587" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Трофимов Владимир</a><br /><a href="players/6337" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Поликарпова Елена</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>14:45</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2510">World Gym День России. Парная категория F</a></td>
+                                        <td class="tournament-icon"><a href="tours/2510" title="участников" class="icon icon-members">12</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2510" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/6055" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Макеечева Ирина (<span class="username">BOO</span>)</a><br /><a href="players/5733" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Крупенникова Евгения</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>14:30</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2509">World Gym День России. Парная категория E</a></td>
+                                        <td class="tournament-icon"><a href="tours/2509" title="участников" class="icon icon-members">18</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2509" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5808" class="medal icon-gold"><img class="userpic" src="../../upload/img/ru/players/mini_5808.gif" alt="">Луговой Андрей (<span class="username">am0rph1s</span>)</a><br /><a href="players/4365" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Пчелкина Евгения</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>12:00</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2517">Khimki Badminton Club OPEN. День России.Doubles B.</a></td>
+                                        <td class="tournament-icon"><a href="tours/2517" title="участников" class="icon icon-members">18</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2517" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5471" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Дзюба Сергей (<span class="username">sergo1529</span>)</a><br /><a href="players/290" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Рогова Ольга</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>11:50</td>
+                                        <td class="center">s</td>
+                                        <td class="tournament-name"><a href="tours/2508">World Gym День России. Одиночная категория D</a></td>
+                                        <td class="tournament-icon"><a href="tours/2508" title="участников" class="icon icon-members">5</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2508" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/4207" class="medal icon-gold"><img class="userpic" src="../../upload/img/ru/players/mini_4207.jpg" alt="">Потапов Алексей (<span class="username">aloy</span>)</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>11:40</td>
+                                        <td class="center">ms</td>
+                                        <td class="tournament-name"><a href="tours/2507">World Gym День России. Одиночная категория E</a></td>
+                                        <td class="tournament-icon"><a href="tours/2507" title="участников" class="icon icon-members">7</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2507" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/5424" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Башкин Николай</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>11:30</td>
+                                        <td class="center">s</td>
+                                        <td class="tournament-name"><a href="tours/2506">World Gym День России. Одиночная категория F</a></td>
+                                        <td class="tournament-icon"><a href="tours/2506" title="участников" class="icon icon-members">13</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2506" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/2725" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Голунова Ольга</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tournament-date">12 Июня (срд) </td>
+                                        <td>10:45</td>
+                                        <td class="center">d</td>
+                                        <td class="tournament-name"><a href="tours/2516">Khimki Badminton Club OPEN. День России.Doubles C.</a></td>
+                                        <td class="tournament-icon"><a href="tours/2516" title="участников" class="icon icon-members">24</a></td>
+                                        <td class="tournament-icon"></td>
+                                        <td class="tournament-icon"><a href="tours/2516" title="сообщения" class="icon icon-comment">0</a></td>
+                                        <td><a href="players/4348" class="medal icon-gold"><img class="userpic" src="images/no_image.png" alt="">Сенько Игорь (<span class="username">iscommon</span>)</a><br /><a href="players/4419" class="medal icon-gold nowrap"><img class="userpic" src="images/no_image.png" alt="">Сенько Павел</a></td>
+                                        <td><a class="user-name" href="players/"></a> </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="pager">
+                            <ul>
+
+
+
+
+
+                                <li class="pager-current"><span>1</span></li>
+
+
+
+
+
+
+
+                                <li class=""><a href="/tours/?past&page=2">2</a></li>
+
+
+
+
+
+
+
+                                <li class="arrow"><a class="icon-arw-n" href="/tours/?past&page=2"></a></li>
+
+
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="right-sidebar sidebar">
+
+
+
+
+                        <div class="online block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2><a href="players/">Сейчас на сайте</a></h2>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-xs-2 userpic-s">
+                                    <a href="players/42" class="userpic-s" title="Бакланов Михаил (BcLanoff)">
+                                        <img src="../../upload/img/ru/players/42.jpg" alt="Бакланов Михаил (BcLanoff)" title="Бакланов Михаил (BcLanoff)">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7"><div style="margin-top: 5px;">Всего: 1 игрок и 1 гость</div></div>
+                                <div class="col-xs-5"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"></div>
+
+                        <div class="last-nodes block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2><a href="forum/">Последние темы на форуме</a></h2>
+                            </div>
+                            <div class="items">
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/80">Продаю Ракетки Astrox 77 (3 шт.)</a></h4></div>
+
+                                    <div class="date"><span class="day">21 июня</span><span class="time">20:48</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/80"> 2</a>
+                                    <span class="user-name"><a href="players/6501">Dobrotin2006</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/2">Пожелания по работе сайта</a></h4></div>
+
+                                    <div class="date"><span class="day">20 июня</span><span class="time">04:10</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/2"> 17</a>
+                                    <span class="user-name"><a href="players/6522">Kovalka</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/79">Продам новую спортивную сумку</a></h4></div>
+
+                                    <div class="date"><span class="day">22 мая</span><span class="time">10:07</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/79"> 1</a>
+                                    <span class="user-name"><a href="players/4237">Nesya</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/78">Кроссовки для бадминтона продаю</a></h4></div>
+
+                                    <div class="date"><span class="day">12 мая</span><span class="time">18:29</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/78"> 1</a>
+                                    <span class="user-name"><a href="players/6382">Рыжевалова Елизавета</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/76">Сумка YONEX 9029</a></h4></div>
+
+                                    <div class="date"><span class="day">6 мая</span><span class="time">15:00</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/76"> 3</a>
+                                    <span class="user-name"><a href="players/4150">revnestle</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/75">Отцы и ДЕТИ</a></h4></div>
+
+                                    <div class="date"><span class="day">30 апреля</span><span class="time">10:04</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/75"> 14</a>
+                                    <span class="user-name"><a href="players/5949">dobrotin68</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/77">Утеряна (забыта?) ракетка Yonex Duora 10</a></h4></div>
+
+                                    <div class="date"><span class="day">26 апреля</span><span class="time">12:03</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/77"> 1</a>
+                                    <span class="user-name"><a href="players/4150">revnestle</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/8">Общие вопросы ЛАБ</a></h4></div>
+
+                                    <div class="date"><span class="day">9 апреля</span><span class="time">11:28</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/8"> 12</a>
+                                    <span class="user-name"><a href="players/6315">zifanya</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/69">Ракетка Kumpoo soul war vs</a></h4></div>
+
+                                    <div class="date"><span class="day">12 марта</span><span class="time">23:47</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/69"> 3</a>
+                                    <span class="user-name"><a href="players/4363">Pakhomych</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/74">Продам ракетку Yonex Z-Force 2</a></h4></div>
+
+                                    <div class="date"><span class="day">10 марта</span><span class="time">16:32</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/74"> 1</a>
+                                    <span class="user-name"><a href="players/6203">RelaxeR</a></span>
+                                </div>
+
+                            </div>
+                            <div class="link"><a class="icon-arws" href="forum/">форум</a></div>
+                        </div>
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"><a href="http://rsl-russia.ru/"><img src="../../upload/banners/35.jpg" alt=""></a></div>
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"></div>
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"><a href="http://www.playbadminton.ru/"><img src="../../upload/banners/51.png" alt=""></a></div>
+
+
+
+
+                        <div class="rating-up block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Вышли на пик формы (пары)</h2>
+                            </div>
+                            <div class="items">
+
+                                <div class="item">
+                                    <a href="players/454" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/454">Горбатова Яна</a></div>
+                                    <div class="rating">718</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/933" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/933">Вельмакин Владимир</a></div>
+                                    <div class="rating">579</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/963" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/963">Шустова Ксения</a></div>
+                                    <div class="rating">755</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1126" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1126">Жирков Александр</a></div>
+                                    <div class="rating">529</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1266" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1266">Якимов Денис</a></div>
+                                    <div class="rating">512</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1346" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1346">Борисов Никита</a></div>
+                                    <div class="rating">661</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1397" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1397">Помазан Сергей</a></div>
+                                    <div class="rating">671</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1797" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1797">Ивленков Сергей</a></div>
+                                    <div class="rating">502</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/4271" class="userpic-s"><img src="../../upload/img/ru/players/4271.jpg"></a>
+                                    <div class="name"><a href="players/4271">Пашкова Екатерина</a><br><a class="user-name" href="players/4271"><span class="status offline"></span>Пашкова</a></div>
+                                    <div class="rating">406</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/4349" class="userpic-s"><img src="../../upload/img/ru/players/4349.jpg"></a>
+                                    <div class="name"><a href="players/4349">Куликов Олег</a><br><a class="user-name" href="players/4349"><span class="status offline"></span>Oakulik</a></div>
+                                    <div class="rating">823</div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8"><div style="margin-top:10px; font-size:1.2rem;">по рейтингу [d] за последние 10 дней</div></div>
+                                <div class="col-xs-4"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+                        <div class="numbers block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Статистика</h2>
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Игроков в базе:<span><a href="players/">5332</a></span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Турниров:<span><a href="tours/?past">2015</a></span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Игр:<span>39980</span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Дата выхода первого рейтинга:<span class="date">31.03.2012</span></div>
+                                </div>
+                            </div>
+                            <div class="link"><a class="icon-arws" href="statistics/">больше статистики</a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo-footer" onclick="window.location='/';"></div>
+                    <div class="desc">
+                        <!--<div class="subtitle">Любительская ассоциация бадминтона</div>-->
+                        Пропаганда общечеловеческих ценностей и здорового образа жизни, через развитие бадминтона как массового, общенационального вида спорта.
+                        <br /><br /><br />
+                        <a href="http://yauza.com" target="_blank">Разработка сайта: Yauza.com</a>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <!--<ul class="footer-menu">
+                     <li class="title"><a href="">Заголовок меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-xs-2">
+                    <ul class="footer-menu">
+                        <li class="title"><a href="/">Главная</a></li>
+
+                        <li><a href="tours/">Календарь турниров</a></li>
+
+                        <li><a href="players/">Рейтинг игроков</a></li>
+
+                        <li><a href="forum/">Форум</a></li>
+
+                        <li><a href="places/">Где поиграть?</a></li>
+
+                        <li><a href="photos/">Галерея</a></li>
+
+                        <li><a href="news/">Новости</a></li>
+
+                        <li><a href="content/11">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="footer-menu">
+                        <li class="title">Календарь</li>
+                        <li><a href="tours/">Ближайшие события</a></li>
+                        <li><a href="tours/?past">Прошедшие турниры</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="title">Игроки</li>
+                        <li><a href="players/">По алфавиту</a></li>
+                        <li><a href="players/?rat_s">Одиночки</a></li>
+                        <li><a href="players/?rat_d">Пары</a></li>
+                    </ul>
+                </div>
+                <div class="social inline">
+
+                    <a href="https://vk.com/public37641138" target="_blank" class="icon-vk icon-social"></a>
+
+                    <a href="https://www.facebook.com/badminton4u.ru/" target="_blank" class="icon-facebook icon-social"></a>
+
+                    <a href="rss/" target="_blank" class="icon-rss icon-social"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

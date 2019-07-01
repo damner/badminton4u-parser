@@ -1,0 +1,494 @@
+[
+  {
+    "url": "tours/2527",
+    "id": 2527,
+    "title": "Парный турнир Ночная лига ХХI",
+    "type": "d",
+    "players": 12,
+    "comments": 0,
+    "date": "26 Июня (срд)",
+    "time": "20:00",
+    "winners": [
+      {
+        "url": "players/1266",
+        "image": "images/no_image.png",
+        "id": "s/1266",
+        "name": "Якимов Денис",
+        "username": ""
+      },
+      {
+        "url": "players/4149",
+        "image": "../../upload/img/ru/players/mini_4149.jpg",
+        "id": "s/4149",
+        "name": "Миролюбова Елена",
+        "username": "Elenamir"
+      }
+    ]
+  },
+  {
+    "url": "tours/2526",
+    "id": 2526,
+    "title": "Двоеборье в NATEN. DB",
+    "type": "d",
+    "players": 8,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "16:30",
+    "winners": [
+      {
+        "url": "players/6016",
+        "image": "images/no_image.png",
+        "id": "s/6016",
+        "name": "Мастяева Полина",
+        "username": "pavelenalav"
+      },
+      {
+        "url": "players/1479",
+        "image": "images/no_image.png",
+        "id": "s/1479",
+        "name": "Трускалов Антон",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2525",
+    "id": 2525,
+    "title": "Двоеборье в NATEN. XDD",
+    "type": "xd",
+    "players": 10,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "15:30",
+    "winners": [
+      {
+        "url": "players/5760",
+        "image": "images/no_image.png",
+        "id": "s/5760",
+        "name": "Лукин Дмитрий",
+        "username": ""
+      },
+      {
+        "url": "players/2850",
+        "image": "images/no_image.png",
+        "id": "s/2850",
+        "name": "Стрелкова Наталия",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2524",
+    "id": 2524,
+    "title": "Двоеборье в NATEN. XDE",
+    "type": "xd",
+    "players": 8,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "15:30",
+    "winners": [
+      {
+        "url": "players/5680",
+        "image": "images/no_image.png",
+        "id": "s/5680",
+        "name": "Белова Наталья",
+        "username": ""
+      },
+      {
+        "url": "players/4377",
+        "image": "images/no_image.png",
+        "id": "s/4377",
+        "name": "Чагуа Важа",
+        "username": "vazhenzo"
+      }
+    ]
+  },
+  {
+    "url": "tours/2523",
+    "id": 2523,
+    "title": "Двоеборье в NATEN. XDC",
+    "type": "xd",
+    "players": 30,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "15:00",
+    "winners": [
+      {
+        "url": "players/5471",
+        "image": "images/no_image.png",
+        "id": "s/5471",
+        "name": "Дзюба Сергей",
+        "username": "sergo1529"
+      },
+      {
+        "url": "players/290",
+        "image": "images/no_image.png",
+        "id": "s/290",
+        "name": "Рогова Ольга",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2522",
+    "id": 2522,
+    "title": "Двоеборье в NATEN. MDD",
+    "type": "md",
+    "players": 8,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "13:00",
+    "winners": [
+      {
+        "url": "players/5760",
+        "image": "images/no_image.png",
+        "id": "s/5760",
+        "name": "Лукин Дмитрий",
+        "username": ""
+      },
+      {
+        "url": "players/93",
+        "image": "images/no_image.png",
+        "id": "s/93",
+        "name": "Максютов Ринат",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2521",
+    "id": 2521,
+    "title": "Двоеборье в NATEN. WDC",
+    "type": "wd",
+    "players": 8,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "13:00",
+    "winners": [
+      {
+        "url": "players/6016",
+        "image": "images/no_image.png",
+        "id": "s/6016",
+        "name": "Мастяева Полина",
+        "username": "pavelenalav"
+      },
+      {
+        "url": "players/4475",
+        "image": "images/no_image.png",
+        "id": "s/4475",
+        "name": "Потапова Дарья",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2520",
+    "id": 2520,
+    "title": "Двоеборье в NATEN. WDE",
+    "type": "wd",
+    "players": 6,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "12:30",
+    "winners": [
+      {
+        "url": "players/6329",
+        "image": "images/no_image.png",
+        "id": "s/6329",
+        "name": "Ракшня Алина",
+        "username": ""
+      },
+      {
+        "url": "players/2802",
+        "image": "images/no_image.png",
+        "id": "s/2802",
+        "name": "Цуприяк Янина",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2519",
+    "id": 2519,
+    "title": "Двоеборье в NATEN. WDD+MDE+WDE",
+    "type": "d",
+    "players": 16,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "12:00",
+    "winners": [
+      {
+        "url": "players/4772",
+        "image": "images/no_image.png",
+        "id": "s/4772",
+        "name": "Абатуров Денис",
+        "username": ""
+      },
+      {
+        "url": "players/4377",
+        "image": "images/no_image.png",
+        "id": "s/4377",
+        "name": "Чагуа Важа",
+        "username": "vazhenzo"
+      }
+    ]
+  },
+  {
+    "url": "tours/2518",
+    "id": 2518,
+    "title": "Двоеборье в NATEN. MDC+WDB",
+    "type": "d",
+    "players": 18,
+    "comments": 0,
+    "date": "22 Июня (сбт)",
+    "time": "12:00",
+    "winners": [
+      {
+        "url": "players/4349",
+        "image": "../../upload/img/ru/players/mini_4349.jpg",
+        "id": "s/4349",
+        "name": "Куликов Олег",
+        "username": "Oakulik"
+      },
+      {
+        "url": "players/1474",
+        "image": "images/no_image.png",
+        "id": "s/1474",
+        "name": "Новиков Александр",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2539",
+    "id": 2539,
+    "title": "Вечерняя лига. Одиночки группа С",
+    "type": "ms",
+    "players": 11,
+    "comments": 0,
+    "date": "13 Июня (чтв)",
+    "time": "",
+    "winners": [
+      {
+        "url": "players/5810",
+        "image": "images/no_image.png",
+        "id": "s/5810",
+        "name": "Дружинин Антон",
+        "username": "DAP25"
+      }
+    ]
+  },
+  {
+    "url": "tours/2512",
+    "id": 2512,
+    "title": "World Gym День России. Парная категория E+",
+    "type": "d",
+    "players": 14,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "16:45",
+    "winners": [
+      {
+        "url": "players/2050",
+        "image": "images/no_image.png",
+        "id": "s/2050",
+        "name": "Рычков Андрей",
+        "username": ""
+      },
+      {
+        "url": "players/4365",
+        "image": "images/no_image.png",
+        "id": "s/4365",
+        "name": "Пчелкина Евгения",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2511",
+    "id": 2511,
+    "title": "World Gym День России. Парная категория F+",
+    "type": "d",
+    "players": 16,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "16:30",
+    "winners": [
+      {
+        "url": "players/5587",
+        "image": "images/no_image.png",
+        "id": "s/5587",
+        "name": "Трофимов Владимир",
+        "username": ""
+      },
+      {
+        "url": "players/6337",
+        "image": "images/no_image.png",
+        "id": "s/6337",
+        "name": "Поликарпова Елена",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2510",
+    "id": 2510,
+    "title": "World Gym День России. Парная категория F",
+    "type": "d",
+    "players": 12,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "14:45",
+    "winners": [
+      {
+        "url": "players/6055",
+        "image": "images/no_image.png",
+        "id": "s/6055",
+        "name": "Макеечева Ирина",
+        "username": "BOO"
+      },
+      {
+        "url": "players/5733",
+        "image": "images/no_image.png",
+        "id": "s/5733",
+        "name": "Крупенникова Евгения",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2509",
+    "id": 2509,
+    "title": "World Gym День России. Парная категория E",
+    "type": "d",
+    "players": 18,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "14:30",
+    "winners": [
+      {
+        "url": "players/5808",
+        "image": "../../upload/img/ru/players/mini_5808.gif",
+        "id": "s/5808",
+        "name": "Луговой Андрей",
+        "username": "am0rph1s"
+      },
+      {
+        "url": "players/4365",
+        "image": "images/no_image.png",
+        "id": "s/4365",
+        "name": "Пчелкина Евгения",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2517",
+    "id": 2517,
+    "title": "Khimki Badminton Club OPEN. День России.Doubles B.",
+    "type": "d",
+    "players": 18,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "12:00",
+    "winners": [
+      {
+        "url": "players/5471",
+        "image": "images/no_image.png",
+        "id": "s/5471",
+        "name": "Дзюба Сергей",
+        "username": "sergo1529"
+      },
+      {
+        "url": "players/290",
+        "image": "images/no_image.png",
+        "id": "s/290",
+        "name": "Рогова Ольга",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2508",
+    "id": 2508,
+    "title": "World Gym День России. Одиночная категория D",
+    "type": "s",
+    "players": 5,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "11:50",
+    "winners": [
+      {
+        "url": "players/4207",
+        "image": "../../upload/img/ru/players/mini_4207.jpg",
+        "id": "s/4207",
+        "name": "Потапов Алексей",
+        "username": "aloy"
+      }
+    ]
+  },
+  {
+    "url": "tours/2507",
+    "id": 2507,
+    "title": "World Gym День России. Одиночная категория E",
+    "type": "ms",
+    "players": 7,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "11:40",
+    "winners": [
+      {
+        "url": "players/5424",
+        "image": "images/no_image.png",
+        "id": "s/5424",
+        "name": "Башкин Николай",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2506",
+    "id": 2506,
+    "title": "World Gym День России. Одиночная категория F",
+    "type": "s",
+    "players": 13,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "11:30",
+    "winners": [
+      {
+        "url": "players/2725",
+        "image": "images/no_image.png",
+        "id": "s/2725",
+        "name": "Голунова Ольга",
+        "username": ""
+      }
+    ]
+  },
+  {
+    "url": "tours/2516",
+    "id": 2516,
+    "title": "Khimki Badminton Club OPEN. День России.Doubles C.",
+    "type": "d",
+    "players": 24,
+    "comments": 0,
+    "date": "12 Июня (срд)",
+    "time": "10:45",
+    "winners": [
+      {
+        "url": "players/4348",
+        "image": "images/no_image.png",
+        "id": "s/4348",
+        "name": "Сенько Игорь",
+        "username": "iscommon"
+      },
+      {
+        "url": "players/4419",
+        "image": "images/no_image.png",
+        "id": "s/4419",
+        "name": "Сенько Павел",
+        "username": ""
+      }
+    ]
+  }
+]
