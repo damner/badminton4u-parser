@@ -2,7 +2,7 @@ import cheerio from "cheerio";
 
 export default class Parser {
 
-    parseTournamentsPageHtml(html) {
+    getTournaments(html) {
         const $ = cheerio.load(html);
 
         const rows = $(".place-tournaments > table > tbody > tr:not(:first-child)");

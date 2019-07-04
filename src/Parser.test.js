@@ -3,14 +3,14 @@ import Parser from "./Parser";
 
 describe("Parser", () => {
 
-    test("parseTournamentsPageHtml parse tournaments-page.html to tournaments-page.json", () => {
-        const tournamentsPageHtml = fs.readFileSync("./tests-data/tournaments-page.html", "utf8");
-        const tournamentsPageHtmlResult = JSON.parse(fs.readFileSync("./tests-data/parseTournamentsPageHtml.json", "utf8"));
+    test("getTournaments parse tournaments-page.html to tournaments-page.json", () => {
+        const html = fs.readFileSync("./tests-data/tournaments-page.html", "utf8");
+        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTournaments.json", "utf8"));
 
         const parser = new Parser();
-        const result = parser.parseTournamentsPageHtml(tournamentsPageHtml);
+        const result = parser.getTournaments(html);
 
-        expect(result).toEqual(tournamentsPageHtmlResult);
+        expect(result).toEqual(expectedResult);
     });
 
 });
