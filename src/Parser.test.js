@@ -13,4 +13,24 @@ describe("Parser", () => {
         expect(result).toEqual(expectedResult);
     });
 
+    test("getTeams [tournament-doubles.html -> getTeams-doubles.json]", () => {
+        const html = fs.readFileSync("./tests-data/tournament-doubles.html", "utf8");
+        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTeams-doubles.json", "utf8"));
+
+        const parser = new Parser();
+        const result = parser.getTeams(html);
+
+        expect(result).toEqual(expectedResult);
+    });
+
+    test("getTeams [tournament-singles.html -> getTeams-singles.json]", () => {
+        const html = fs.readFileSync("./tests-data/tournament-singles.html", "utf8");
+        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTeams-singles.json", "utf8"));
+
+        const parser = new Parser();
+        const result = parser.getTeams(html);
+
+        expect(result).toEqual(expectedResult);
+    });
+
 });

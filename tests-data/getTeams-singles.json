@@ -1,0 +1,97 @@
+[
+  {
+    "place": 1,
+    "players": [
+      {
+        "url": "players/4207",
+        "id": 4207,
+        "name": "Потапов Алексей Андреевич",
+        "username": "aloy",
+        "rating": 545
+      }
+    ],
+    "matches": {
+      "total": 4,
+      "won": 4,
+      "lost": 0
+    },
+    "rating": 545,
+    "ratingChanges": 26
+  },
+  {
+    "place": 2,
+    "players": [
+      {
+        "url": "players/461",
+        "id": 461,
+        "name": "Догонина Надежда",
+        "username": null,
+        "rating": 549
+      }
+    ],
+    "matches": {
+      "total": 4,
+      "won": 3,
+      "lost": 1
+    },
+    "rating": 549,
+    "ratingChanges": 5
+  },
+  {
+    "place": 3,
+    "players": [
+      {
+        "url": "players/5021",
+        "id": 5021,
+        "name": "Сорокин Павел Михайлович",
+        "username": "padem",
+        "rating": 534
+      }
+    ],
+    "matches": {
+      "total": 4,
+      "won": 2,
+      "lost": 2
+    },
+    "rating": 534,
+    "ratingChanges": -9
+  },
+  {
+    "place": null,
+    "players": [
+      {
+        "url": "players/1797",
+        "id": 1797,
+        "name": "Ивленков Сергей",
+        "username": null,
+        "rating": 512
+      }
+    ],
+    "matches": {
+      "total": 4,
+      "won": 1,
+      "lost": 3
+    },
+    "rating": 512,
+    "ratingChanges": -18
+  },
+  {
+    "place": null,
+    "players": [
+      {
+        "url": "players/4382",
+        "id": 4382,
+        "name": "Гордон Николай",
+        "username": "GrayCardinal",
+        "rating": 445
+      }
+    ],
+    "matches": {
+      "total": 4,
+      "won": 0,
+      "lost": 4
+    },
+    "rating": 445,
+    "ratingChanges": -4
+  }
+]

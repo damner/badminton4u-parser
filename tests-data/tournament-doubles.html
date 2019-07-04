@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://badminton4u.ru/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="бадминтон, турниры по бадминтону, любительский бадминтон, бадминтон в москве, поиграть в бадминтон">
+    <meta name="description" content="Любительская ассоциация бадминтона">
+    <meta name="yandex-verification" content="25f234eabd2bc1aa" />
+    <title>26 Июня 2019 - Парный турнир Ночная лига ХХI | Календарь | Любительская ассоциация бадминтона</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    <link type="text/css" rel="stylesheet" href="plugins/jquery/jquery-ui/jquery-ui-1.10.4.custom.min.css">
+    <!--<link href="css/base.css" rel="stylesheet">-->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery-ui/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/online.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body onload="">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43621964 = new Ya.Metrika({
+                    id:43621964,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43621964" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<div class="popup-overlay"></div>
+<div class="login-popup-form">
+    <div class="popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Вход на сайт</h2></div>
+
+    <form action="/tours/2527" method="post">
+        <input type="text" name="login" placeholder="Логин">
+        <input type="password" name="password" placeholder="Пароль">
+        <a href="forgot/" class="bl">Забыли пароль?</a>
+        <input type="submit" class="button" value="Войти" style="margin-top:10px;">
+    </form>
+</div>
+
+
+<div class="mail-2-popup-overlay">	</div>
+<div class="mail-2-popup-form">
+    <div class="mail-2-popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Отправка личного сообщения</h2></div>
+    <form action="messages/" method="post">
+        <input type="hidden" name="player_id" value="" id="mail-popup-player">
+        <div class="adr">Сообщение для: <img class="userpic" src="" alt="" id="mail-popup-img"><span id="mail-popup-span">Николай Иванов (<a href="" class="username">Brad</a>)</span></div>
+        <!--<input type="text" placeholder="Кому">-->
+        <textarea placeholder="Текст сообщения" name="text"></textarea>
+        <input type="submit" class="button" value="Отправить">
+    </form>
+</div>
+
+<div class="mail-3-popup-overlay">	</div>
+<div class="mail-3-popup-form">
+    <div class="mail-3-popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Редактирование сообщения</h2></div>
+    <input type="hidden" name="player_id" value="" id="mail-popup-player">
+    <textarea placeholder="Текст сообщения" name="text" id="mail-3-popup-text" mes_id=""></textarea>
+    <input type="button" class="button" value="Сохранить" onclick="editMessage();">
+</div>
+
+<header>
+
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-top-message inline">
+
+                    </div>
+
+                    <div class="header-top-menu inline">
+                        <ul>
+                            <li><a class="to-login">Вход</a></li>
+                            <li><a class="to-register" href="registration/">Регистрация</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="social inline">
+
+                        <a href="https://vk.com/public37641138" target="_blank" class="icon-vk icon-social"></a>
+
+                        <a href="https://www.facebook.com/badminton4u.ru/" target="_blank" class="icon-facebook icon-social"></a>
+
+                        <a href="rss/" target="_blank" class="icon-rss icon-social"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="wrapper">
+                        <div class="logo"><a href="/"></a></div>
+                        <!--<div class="subtitle">Ассоциация<br>настольного тенниса</div>-->
+                    </div>
+                </div>
+
+
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://www.badm.ru/"><img src="../../upload/banners/40.jpg" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://www.prolink.ru/"><img src="../../upload/banners/39.png" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://lining.center/"><img src="../../upload/banners/41.jpg" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="https://badmintonworld.ru/"><img src="../../upload/banners/57.jpg" alt=""></a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div id="main-menu">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="main-menu-wrapper">
+                        <div class="main-menu">
+                            <ul class="inline">
+
+                                <li><a href="tours/">Календарь турниров</a></li>
+
+                                <li><a href="players/">Рейтинг игроков</a></li>
+
+                                <li><a href="forum/">Форум</a></li>
+
+                                <li><a href="places/">Где поиграть?</a></li>
+
+                                <li><a href="photos/">Галерея</a></li>
+
+                                <li><a href="news/">Новости</a></li>
+
+                                <li><a href="content/11">Контакты</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <div id="search-inner">
+                                <form action="/search/" method="get">
+                                    <input type="text" id="search" name="s" value="" placeholder="Поиск по сайту">
+                                    <input type="submit" class="button" value="">
+                                </form>
+                            </div>
+                            <div id="search-btn"><span class="icon-search"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="main-page">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-9">
+                    <div class="main-column">
+
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="tours/">Календарь</a></li>
+                                <li class="active">Парный турнир Ночная лига ХХI</li>
+                            </ul>
+                        </div>
+
+                        <div class="node-page page">
+
+                            <div class="node">
+                                <div class="title"><h1 style="text-transform:none;">Парный турнир Ночная лига ХХI</h1></div>
+
+                                <div class="node-desc item">
+                                    <div class="row">
+                                        <div class="col-xs-4"><img src="images/thumb-l.jpg"></div>
+                                        <div class="col-xs-8">
+                                            <div class="date">
+                                                <span class="day">26 Июня 2019</span>
+                                                <span class="time">среда</span>
+                                                <span class="day">20:00</span>
+                                            </div>
+                                            <div class="desc" style="margin:10px 0px -10px;">
+
+                                            </div>
+                                            <div class="about">
+                                                <div class="icons">
+                                                    <a href="" title="взнос за участие" class="icon icon-rub">взнос <b>0 руб.</b></a>
+                                                    <a href="" title="зарегистрировано / максимальное количество участников" class="icon icon-members">6 / 0</a>
+                                                    <a href="" title="максимальный рейтинг" class="icon icon-rating">0</a>
+                                                    <a href="" title="сообщения" class="icon icon-comment">0</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <div class="desc-item"><label>Тип турнира:</label> Пары</div>
+
+                                                <div class="desc-item"><label>Игродром:</label> <a href="https---terball.ru">Территория мяча</a></div>
+
+                                                <div class="desc-item"><label>Адрес:</label> Москва, 2-я ул. Машиностроения, д. 23</div>
+                                                <div class="desc-item"><label>Организатор:</label> Любительская ассоциация бадминтона</div>
+                                                <div class="desc-item"><label>Телефоны:</label> 89039609543</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-content item"></div>
+
+                                <div class="tournament-info item">
+
+
+                                    <div class="members block">
+                                        <div class="title"><h2>Результаты турнира</h2></div>
+
+                                        <div class="item">
+                                            <table>
+                                                <tr>
+                                                    <th>М</th>
+                                                    <th>Игрок</th>
+                                                    <th>Игры</th>
+                                                    <th>Рейтинг [d]</th>
+                                                    <th>+\-</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><span class="gold medal"><a href="players/1266">Якимов Денис</a></span> / <a href="players/4149" class="bold">Миролюбова Елена Сергеевна (Elenamir)</a></td>
+                                                    <td> 5 (5-0) </td>
+                                                    <td class=""><b>536</b> (487 / 585)</td>
+                                                    <td class="points"><span class="green">+24.5</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td><span class="silver medal"><a href="players/42">Бакланов Михаил (BcLanoff)</a></span> / <a href="players/1771" class="bold">Бекетов Дмитрий</a></td>
+                                                    <td> 5 (4-1) </td>
+                                                    <td class=""><b>538</b> (486 / 590)</td>
+                                                    <td class="points"><span class="green">+3.5</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td><span class="copper medal"><a href="players/249">Мельников Александр</a></span> / <a href="players/4372" class="bold">Красильникова Анна (annette)</a></td>
+                                                    <td> 5 (3-2) </td>
+                                                    <td class=""><b>530</b> (602 / 459)</td>
+                                                    <td class="points"><span class="red">-12.6</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>-</td>
+                                                    <td><span><a href="players/2246">Антонов Игорь</a></span> / <a href="players/6501">Добротин Владимир Михайлович (Dobrotin2006)</a></td>
+                                                    <td> 5 (2-3) </td>
+                                                    <td class=""><b>470</b> (399 / 541)</td>
+                                                    <td class="points"><span class="green">+1.3</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>-</td>
+                                                    <td><span><a href="players/4247">Покалов Валентин Андреевич (PoVal)</a></span> / <a href="players/2633">Голева Елена</a></td>
+                                                    <td> 5 (1-4) </td>
+                                                    <td class=""><b>451</b> (502 / 400)</td>
+                                                    <td class="points"><span class="red">-7.2</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>-</td>
+                                                    <td><span><a href="players/5662">Корнилов Алексей</a></span> / <a href="players/6526">Бакирова Татьяна</a></td>
+                                                    <td> 5 (0-5) </td>
+                                                    <td class=""><b>409</b> (468 / 350)</td>
+                                                    <td class="points"><span class="red">-9.6</span></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                        <br />
+                                        <div class="title"><h2>Список игр</h2></div>
+                                        <div class="item">
+                                            <table>
+
+                                                <tr>
+                                                    <td class="points"><span class="red">-10.2</span></td>
+                                                    <td><a href="players/42">Бакланов Михаил</a> / <a href="players/1771">Бекетов Дмитрий</a></td>
+                                                    <td> 0 : 2 </td>
+                                                    <td><a href="players/1266">Якимов Денис</a> / <a href="players/4149">Миролюбова Елена Сергеевна</a></td>
+                                                    <td class="points"><span class="green">+10.2</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+9.2</span></td>
+                                                    <td><a href="players/42">Бакланов Михаил</a> / <a href="players/1771">Бекетов Дмитрий</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/249">Мельников Александр</a> / <a href="players/4372">Красильникова Анна</a></td>
+                                                    <td class="points"><span class="red">-9.2</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+3.2</span></td>
+                                                    <td><a href="players/42">Бакланов Михаил</a> / <a href="players/1771">Бекетов Дмитрий</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/2246">Антонов Игорь</a> / <a href="players/6501">Добротин Владимир Михайлович</a></td>
+                                                    <td class="points"><span class="red">-3.2</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+1.3</span></td>
+                                                    <td><a href="players/42">Бакланов Михаил</a> / <a href="players/1771">Бекетов Дмитрий</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/4247">Покалов Валентин Андреевич</a> / <a href="players/2633">Голева Елена</a></td>
+                                                    <td class="points"><span class="red">-1.3</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">0</span></td>
+                                                    <td><a href="players/42">Бакланов Михаил</a> / <a href="players/1771">Бекетов Дмитрий</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/5662">Корнилов Алексей</a> / <a href="players/6526">Бакирова Татьяна</a></td>
+                                                    <td class="points"><span class="green">0</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+9.4</span></td>
+                                                    <td><a href="players/1266">Якимов Денис</a> / <a href="players/4149">Миролюбова Елена Сергеевна</a></td>
+                                                    <td> 2 : 1 </td>
+                                                    <td><a href="players/249">Мельников Александр</a> / <a href="players/4372">Красильникова Анна</a></td>
+                                                    <td class="points"><span class="red">-9.4</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+3.4</span></td>
+                                                    <td><a href="players/1266">Якимов Денис</a> / <a href="players/4149">Миролюбова Елена Сергеевна</a></td>
+                                                    <td> 2 : 1 </td>
+                                                    <td><a href="players/2246">Антонов Игорь</a> / <a href="players/6501">Добротин Владимир Михайлович</a></td>
+                                                    <td class="points"><span class="red">-3.4</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+1.5</span></td>
+                                                    <td><a href="players/1266">Якимов Денис</a> / <a href="players/4149">Миролюбова Елена Сергеевна</a></td>
+                                                    <td> 2 : 1 </td>
+                                                    <td><a href="players/4247">Покалов Валентин Андреевич</a> / <a href="players/2633">Голева Елена</a></td>
+                                                    <td class="points"><span class="red">-1.5</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">0</span></td>
+                                                    <td><a href="players/1266">Якимов Денис</a> / <a href="players/4149">Миролюбова Елена Сергеевна</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/5662">Корнилов Алексей</a> / <a href="players/6526">Бакирова Татьяна</a></td>
+                                                    <td class="points"><span class="green">0</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+4</span></td>
+                                                    <td><a href="players/249">Мельников Александр</a> / <a href="players/4372">Красильникова Анна</a></td>
+                                                    <td> 2 : 1 </td>
+                                                    <td><a href="players/2246">Антонов Игорь</a> / <a href="players/6501">Добротин Владимир Михайлович</a></td>
+                                                    <td class="points"><span class="red">-4</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+2.1</span></td>
+                                                    <td><a href="players/249">Мельников Александр</a> / <a href="players/4372">Красильникова Анна</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/4247">Покалов Валентин Андреевич</a> / <a href="players/2633">Голева Елена</a></td>
+                                                    <td class="points"><span class="red">-2.1</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">0</span></td>
+                                                    <td><a href="players/249">Мельников Александр</a> / <a href="players/4372">Красильникова Анна</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/5662">Корнилов Алексей</a> / <a href="players/6526">Бакирова Татьяна</a></td>
+                                                    <td class="points"><span class="green">0</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+8.1</span></td>
+                                                    <td><a href="players/2246">Антонов Игорь</a> / <a href="players/6501">Добротин Владимир Михайлович</a></td>
+                                                    <td> 2 : 1 </td>
+                                                    <td><a href="players/4247">Покалов Валентин Андреевич</a> / <a href="players/2633">Голева Елена</a></td>
+                                                    <td class="points"><span class="red">-8.1</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+3.9</span></td>
+                                                    <td><a href="players/2246">Антонов Игорь</a> / <a href="players/6501">Добротин Владимир Михайлович</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/5662">Корнилов Алексей</a> / <a href="players/6526">Бакирова Татьяна</a></td>
+                                                    <td class="points"><span class="red">-3.9</span></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="points"><span class="green">+5.8</span></td>
+                                                    <td><a href="players/4247">Покалов Валентин Андреевич</a> / <a href="players/2633">Голева Елена</a></td>
+                                                    <td> 2 : 0 </td>
+                                                    <td><a href="players/5662">Корнилов Алексей</a> / <a href="players/6526">Бакирова Татьяна</a></td>
+                                                    <td class="points"><span class="red">-5.8</span></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    <div class="members block">
+                                        <div class="title"><h2>Фото с турнира</h2> <a href="photos/?code=tours&id=2527" style="color:#0091bc;">(смотреть фото в галерее)</a></div>
+                                        <div class="tour-photos">
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_220545.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_220545.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_221645.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_221645.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_221710.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_221710.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_221850.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_221850.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_222120.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_222120.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_222243.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_222243.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="tour-photo">
+                                                <a href="upload/img/ru/tours/2527/20190626_233431.jpg" rel="photo" title=""><img src="upload/img/ru/tours/2527/mini_20190626_233431.jpg" alt=""></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <a name="messages"></a>
+                            <div class="comments block">
+                                <div class="title"><h2>Обсуждение турнира</h2><div class="pattern"></div></div>
+
+
+
+                                <div class="items">
+
+                                    <p>Пока нет ни одного сообщения</p>
+
+
+                                </div>
+
+                                <!--<div class="subscription">
+                                 <ul>
+                                  <li><a class="icon-rss icon" href="">RSS тем</a></li>
+                                  <li><a class="icon-rss icon" href="">RSS сообщений</a></li>
+                                  <li><a class="icon-message icon" href="">Подписаться по почте</a></li>
+                                 </ul>
+                                </div>-->
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="right-sidebar sidebar">
+
+
+
+
+                        <div class="online block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2><a href="players/">Сейчас на сайте</a></h2>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-xs-2 userpic-s">
+                                    <a href="players/42" class="userpic-s" title="Бакланов Михаил (BcLanoff)">
+                                        <img src="../../upload/img/ru/players/42.jpg" alt="Бакланов Михаил (BcLanoff)" title="Бакланов Михаил (BcLanoff)">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7"><div style="margin-top: 5px;">Всего: 1 игрок и 1 гость</div></div>
+                                <div class="col-xs-5"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"></div>
+
+                        <div class="last-nodes block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2><a href="forum/">Последние темы на форуме</a></h2>
+                            </div>
+                            <div class="items">
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/80">Продаю Ракетки Astrox 77 (3 шт.)</a></h4></div>
+
+                                    <div class="date"><span class="day">21 июня</span><span class="time">20:48</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/80"> 2</a>
+                                    <span class="user-name"><a href="players/6501">Dobrotin2006</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/2">Пожелания по работе сайта</a></h4></div>
+
+                                    <div class="date"><span class="day">20 июня</span><span class="time">04:10</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/2"> 17</a>
+                                    <span class="user-name"><a href="players/6522">Kovalka</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/79">Продам новую спортивную сумку</a></h4></div>
+
+                                    <div class="date"><span class="day">22 мая</span><span class="time">10:07</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/79"> 1</a>
+                                    <span class="user-name"><a href="players/4237">Nesya</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/78">Кроссовки для бадминтона продаю</a></h4></div>
+
+                                    <div class="date"><span class="day">12 мая</span><span class="time">18:29</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/78"> 1</a>
+                                    <span class="user-name"><a href="players/6382">Рыжевалова Елизавета</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/76">Сумка YONEX 9029</a></h4></div>
+
+                                    <div class="date"><span class="day">6 мая</span><span class="time">15:00</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/76"> 3</a>
+                                    <span class="user-name"><a href="players/4150">revnestle</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/75">Отцы и ДЕТИ</a></h4></div>
+
+                                    <div class="date"><span class="day">30 апреля</span><span class="time">10:04</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/75"> 14</a>
+                                    <span class="user-name"><a href="players/5949">dobrotin68</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/77">Утеряна (забыта?) ракетка Yonex Duora 10</a></h4></div>
+
+                                    <div class="date"><span class="day">26 апреля</span><span class="time">12:03</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/77"> 1</a>
+                                    <span class="user-name"><a href="players/4150">revnestle</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/8">Общие вопросы ЛАБ</a></h4></div>
+
+                                    <div class="date"><span class="day">9 апреля</span><span class="time">11:28</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/8"> 12</a>
+                                    <span class="user-name"><a href="players/6315">zifanya</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/69">Ракетка Kumpoo soul war vs</a></h4></div>
+
+                                    <div class="date"><span class="day">12 марта</span><span class="time">23:47</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/69"> 3</a>
+                                    <span class="user-name"><a href="players/4363">Pakhomych</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/74">Продам ракетку Yonex Z-Force 2</a></h4></div>
+
+                                    <div class="date"><span class="day">10 марта</span><span class="time">16:32</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/74"> 1</a>
+                                    <span class="user-name"><a href="players/6203">RelaxeR</a></span>
+                                </div>
+
+                            </div>
+                            <div class="link"><a class="icon-arws" href="forum/">форум</a></div>
+                        </div>
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"><a href="http://rsl-russia.ru/"><img src="../../upload/banners/35.jpg" alt=""></a></div>
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"></div>
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"><a href="http://www.playbadminton.ru/"><img src="../../upload/banners/51.png" alt=""></a></div>
+
+
+
+
+                        <div class="rating-up block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Вышли на пик формы (пары)</h2>
+                            </div>
+                            <div class="items">
+
+                                <div class="item">
+                                    <a href="players/454" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/454">Горбатова Яна</a></div>
+                                    <div class="rating">718</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/933" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/933">Вельмакин Владимир</a></div>
+                                    <div class="rating">579</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/963" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/963">Шустова Ксения</a></div>
+                                    <div class="rating">755</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1126" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1126">Жирков Александр</a></div>
+                                    <div class="rating">529</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1266" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1266">Якимов Денис</a></div>
+                                    <div class="rating">512</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1346" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1346">Борисов Никита</a></div>
+                                    <div class="rating">661</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1397" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1397">Помазан Сергей</a></div>
+                                    <div class="rating">671</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/1797" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1797">Ивленков Сергей</a></div>
+                                    <div class="rating">502</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/4271" class="userpic-s"><img src="../../upload/img/ru/players/4271.jpg"></a>
+                                    <div class="name"><a href="players/4271">Пашкова Екатерина</a><br><a class="user-name" href="players/4271"><span class="status offline"></span>Пашкова</a></div>
+                                    <div class="rating">406</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/4349" class="userpic-s"><img src="../../upload/img/ru/players/4349.jpg"></a>
+                                    <div class="name"><a href="players/4349">Куликов Олег</a><br><a class="user-name" href="players/4349"><span class="status offline"></span>Oakulik</a></div>
+                                    <div class="rating">823</div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8"><div style="margin-top:10px; font-size:1.2rem;">по рейтингу [d] за последние 10 дней</div></div>
+                                <div class="col-xs-4"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+                        <div class="numbers block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Статистика</h2>
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Игроков в базе:<span><a href="players/">5332</a></span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Турниров:<span><a href="tours/?past">2015</a></span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Игр:<span>39980</span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Дата выхода первого рейтинга:<span class="date">31.03.2012</span></div>
+                                </div>
+                            </div>
+                            <div class="link"><a class="icon-arws" href="statistics/">больше статистики</a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo-footer" onclick="window.location='/';"></div>
+                    <div class="desc">
+                        <!--<div class="subtitle">Любительская ассоциация бадминтона</div>-->
+                        Пропаганда общечеловеческих ценностей и здорового образа жизни, через развитие бадминтона как массового, общенационального вида спорта.
+                        <br /><br /><br />
+                        <a href="http://yauza.com" target="_blank">Разработка сайта: Yauza.com</a>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <!--<ul class="footer-menu">
+                     <li class="title"><a href="">Заголовок меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-xs-2">
+                    <ul class="footer-menu">
+                        <li class="title"><a href="/">Главная</a></li>
+
+                        <li><a href="tours/">Календарь турниров</a></li>
+
+                        <li><a href="players/">Рейтинг игроков</a></li>
+
+                        <li><a href="forum/">Форум</a></li>
+
+                        <li><a href="places/">Где поиграть?</a></li>
+
+                        <li><a href="photos/">Галерея</a></li>
+
+                        <li><a href="news/">Новости</a></li>
+
+                        <li><a href="content/11">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="footer-menu">
+                        <li class="title">Календарь</li>
+                        <li><a href="tours/">Ближайшие события</a></li>
+                        <li><a href="tours/?past">Прошедшие турниры</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="title">Игроки</li>
+                        <li><a href="players/">По алфавиту</a></li>
+                        <li><a href="players/?rat_s">Одиночки</a></li>
+                        <li><a href="players/?rat_d">Пары</a></li>
+                    </ul>
+                </div>
+                <div class="social inline">
+
+                    <a href="https://vk.com/public37641138" target="_blank" class="icon-vk icon-social"></a>
+
+                    <a href="https://www.facebook.com/badminton4u.ru/" target="_blank" class="icon-facebook icon-social"></a>
+
+                    <a href="rss/" target="_blank" class="icon-rss icon-social"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
