@@ -93,7 +93,7 @@ export default class Parser {
                     lost: +parsedMatches[3],
                 },
                 rating: parseInt(teamRating) || null,
-                ratingChanges: parseFloat(ratingChanges) || null,
+                ratingChanges: isNaN(ratingChanges) ? null : parseFloat(ratingChanges),
             };
         }).get();
     }
