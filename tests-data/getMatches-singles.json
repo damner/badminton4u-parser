@@ -1,0 +1,242 @@
+[
+  {
+    "team1": {
+      "score": 0,
+      "ratingChanges": -10.4,
+      "players": [
+        {
+          "url": "players/461",
+          "id": 461,
+          "name": "Догонина Надежда"
+        }
+      ]
+    },
+    "team2": {
+      "score": 2,
+      "ratingChanges": 10.4,
+      "players": [
+        {
+          "url": "players/4207",
+          "id": 4207,
+          "name": "Потапов Алексей Андреевич"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 8.5,
+      "players": [
+        {
+          "url": "players/461",
+          "id": 461,
+          "name": "Догонина Надежда"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": -8.5,
+      "players": [
+        {
+          "url": "players/5021",
+          "id": 5021,
+          "name": "Сорокин Павел Михайлович"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 6.4,
+      "players": [
+        {
+          "url": "players/461",
+          "id": 461,
+          "name": "Догонина Надежда"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": -6.4,
+      "players": [
+        {
+          "url": "players/1797",
+          "id": 1797,
+          "name": "Ивленков Сергей"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 0,
+      "players": [
+        {
+          "url": "players/461",
+          "id": 461,
+          "name": "Догонина Надежда"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": 0,
+      "players": [
+        {
+          "url": "players/4382",
+          "id": 4382,
+          "name": "Гордон Николай"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 8.9,
+      "players": [
+        {
+          "url": "players/4207",
+          "id": 4207,
+          "name": "Потапов Алексей Андреевич"
+        }
+      ]
+    },
+    "team2": {
+      "score": 1,
+      "ratingChanges": -8.9,
+      "players": [
+        {
+          "url": "players/5021",
+          "id": 5021,
+          "name": "Сорокин Павел Михайлович"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 6.7,
+      "players": [
+        {
+          "url": "players/4207",
+          "id": 4207,
+          "name": "Потапов Алексей Андреевич"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": -6.7,
+      "players": [
+        {
+          "url": "players/1797",
+          "id": 1797,
+          "name": "Ивленков Сергей"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 0,
+      "players": [
+        {
+          "url": "players/4207",
+          "id": 4207,
+          "name": "Потапов Алексей Андреевич"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": 0,
+      "players": [
+        {
+          "url": "players/4382",
+          "id": 4382,
+          "name": "Гордон Николай"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 7.8,
+      "players": [
+        {
+          "url": "players/5021",
+          "id": 5021,
+          "name": "Сорокин Павел Михайлович"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": -7.8,
+      "players": [
+        {
+          "url": "players/1797",
+          "id": 1797,
+          "name": "Ивленков Сергей"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 1.1,
+      "players": [
+        {
+          "url": "players/5021",
+          "id": 5021,
+          "name": "Сорокин Павел Михайлович"
+        }
+      ]
+    },
+    "team2": {
+      "score": 1,
+      "ratingChanges": -1.1,
+      "players": [
+        {
+          "url": "players/4382",
+          "id": 4382,
+          "name": "Гордон Николай"
+        }
+      ]
+    }
+  },
+  {
+    "team1": {
+      "score": 2,
+      "ratingChanges": 3.2,
+      "players": [
+        {
+          "url": "players/1797",
+          "id": 1797,
+          "name": "Ивленков Сергей"
+        }
+      ]
+    },
+    "team2": {
+      "score": 0,
+      "ratingChanges": -3.2,
+      "players": [
+        {
+          "url": "players/4382",
+          "id": 4382,
+          "name": "Гордон Николай"
+        }
+      ]
+    }
+  }
+]

@@ -33,4 +33,24 @@ describe("Parser", () => {
         expect(result).toEqual(expectedResult);
     });
 
+    test("getMatches [tournament-doubles.html -> getMatches-doubles.json]", () => {
+        const html = fs.readFileSync("./tests-data/tournament-doubles.html", "utf8");
+        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getMatches-doubles.json", "utf8"));
+
+        const parser = new Parser();
+        const result = parser.getMatches(html);
+
+        expect(result).toEqual(expectedResult);
+    });
+
+    test("getMatches [tournament-singles.html -> getMatches-singles.json]", () => {
+        const html = fs.readFileSync("./tests-data/tournament-singles.html", "utf8");
+        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getMatches-singles.json", "utf8"));
+
+        const parser = new Parser();
+        const result = parser.getMatches(html);
+
+        expect(result).toEqual(expectedResult);
+    });
+
 });

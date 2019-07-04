@@ -98,4 +98,62 @@ export default class Parser {
         }).get();
     }
 
+    getMatches(html) {
+        const $ = cheerio.load(html);
+
+        const $rows = $(".members > .item:nth-child(5) > table > tbody > tr");
+
+        const aaa = $rows.map((i, row) => {
+            const $td = $(row).children("td");
+
+            const players1 = $td.eq(1).find("a").map((i, a) => {
+                const href = $(a).attr("href");
+
+                return {
+                    url: href,
+                    id: +href.substr(8),
+                    name: $(a).text().trim(),
+                };
+            }).get();
+
+            const players2 = $td.eq(3).find("a").map((i, a) => {
+                const href = $(a).attr("href");
+
+                return {
+                    url: href,
+                    id: +href.substr(8),
+                    name: $(a).text().trim(),
+                };
+            }).get();
+
+            const scores = $td.eq(2).text().trim();
+            const parsedScores = scores.match(/^(\d+)\s*:\s*(\d+)$/);
+
+            const team1 = {
+                ratingChanges: $td.eq(0).text().trim(),
+            };
+
+            const team2 = {
+                ratingChanges: $td.eq(4).text().trim(),
+            };
+
+            return {
+                team1: {
+                    score: isNaN(parsedScores[1]) ? null : parseInt(parsedScores[1]),
+                    ratingChanges: isNaN(team1.ratingChanges) ? null : parseFloat(team1.ratingChanges),
+                    players: players1,
+                },
+                team2: {
+                    score: isNaN(parsedScores[2]) ? null : parseInt(parsedScores[2]),
+                    ratingChanges: isNaN(team2.ratingChanges) ? null : parseFloat(team2.ratingChanges),
+                    players: players2,
+                },
+            };
+        }).get();
+
+        console.log(JSON.stringify(aaa));
+
+        return aaa;
+    }
+
 }
