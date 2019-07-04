@@ -5,9 +5,9 @@ export default class Parser {
     getTournaments(html) {
         const $ = cheerio.load(html);
 
-        const rows = $(".place-tournaments > table > tbody > tr:not(:first-child)");
+        const $rows = $(".place-tournaments > table > tbody > tr:not(:first-child)");
 
-        return rows.map((i, row) => {
+        return $rows.map((i, row) => {
             const $td = $(row).children("td");
 
             const href = $td.eq(3).find("a").attr("href");
@@ -15,12 +15,14 @@ export default class Parser {
             const winners = $td.eq(7).children("a").map((i, a) => {
                 const href = $(a).attr("href");
 
+                const username = $(a).find(".username").text();
+
                 return {
                     url: href,
                     image: $(a).children("img").attr("src"),
-                    id: href.substr(6),
+                    id: +href.substr(8),
                     name: $(a).text().replace(/\s+\(.*?\)$/, ""),
-                    username: $(a).find(".username").text(),
+                    username: username || null,
                 };
             }).get();
 

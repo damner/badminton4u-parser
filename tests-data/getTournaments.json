@@ -12,14 +12,14 @@
       {
         "url": "players/1266",
         "image": "images/no_image.png",
-        "id": "s/1266",
+        "id": 1266,
         "name": "Якимов Денис",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/4149",
         "image": "../../upload/img/ru/players/mini_4149.jpg",
-        "id": "s/4149",
+        "id": 4149,
         "name": "Миролюбова Елена",
         "username": "Elenamir"
       }
@@ -38,16 +38,16 @@
       {
         "url": "players/6016",
         "image": "images/no_image.png",
-        "id": "s/6016",
+        "id": 6016,
         "name": "Мастяева Полина",
         "username": "pavelenalav"
       },
       {
         "url": "players/1479",
         "image": "images/no_image.png",
-        "id": "s/1479",
+        "id": 1479,
         "name": "Трускалов Антон",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -64,16 +64,16 @@
       {
         "url": "players/5760",
         "image": "images/no_image.png",
-        "id": "s/5760",
+        "id": 5760,
         "name": "Лукин Дмитрий",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/2850",
         "image": "images/no_image.png",
-        "id": "s/2850",
+        "id": 2850,
         "name": "Стрелкова Наталия",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -90,14 +90,14 @@
       {
         "url": "players/5680",
         "image": "images/no_image.png",
-        "id": "s/5680",
+        "id": 5680,
         "name": "Белова Наталья",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/4377",
         "image": "images/no_image.png",
-        "id": "s/4377",
+        "id": 4377,
         "name": "Чагуа Важа",
         "username": "vazhenzo"
       }
@@ -116,16 +116,16 @@
       {
         "url": "players/5471",
         "image": "images/no_image.png",
-        "id": "s/5471",
+        "id": 5471,
         "name": "Дзюба Сергей",
         "username": "sergo1529"
       },
       {
         "url": "players/290",
         "image": "images/no_image.png",
-        "id": "s/290",
+        "id": 290,
         "name": "Рогова Ольга",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -142,16 +142,16 @@
       {
         "url": "players/5760",
         "image": "images/no_image.png",
-        "id": "s/5760",
+        "id": 5760,
         "name": "Лукин Дмитрий",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/93",
         "image": "images/no_image.png",
-        "id": "s/93",
+        "id": 93,
         "name": "Максютов Ринат",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -168,16 +168,16 @@
       {
         "url": "players/6016",
         "image": "images/no_image.png",
-        "id": "s/6016",
+        "id": 6016,
         "name": "Мастяева Полина",
         "username": "pavelenalav"
       },
       {
         "url": "players/4475",
         "image": "images/no_image.png",
-        "id": "s/4475",
+        "id": 4475,
         "name": "Потапова Дарья",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -194,16 +194,16 @@
       {
         "url": "players/6329",
         "image": "images/no_image.png",
-        "id": "s/6329",
+        "id": 6329,
         "name": "Ракшня Алина",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/2802",
         "image": "images/no_image.png",
-        "id": "s/2802",
+        "id": 2802,
         "name": "Цуприяк Янина",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -220,14 +220,14 @@
       {
         "url": "players/4772",
         "image": "images/no_image.png",
-        "id": "s/4772",
+        "id": 4772,
         "name": "Абатуров Денис",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/4377",
         "image": "images/no_image.png",
-        "id": "s/4377",
+        "id": 4377,
         "name": "Чагуа Важа",
         "username": "vazhenzo"
       }
@@ -246,16 +246,16 @@
       {
         "url": "players/4349",
         "image": "../../upload/img/ru/players/mini_4349.jpg",
-        "id": "s/4349",
+        "id": 4349,
         "name": "Куликов Олег",
         "username": "Oakulik"
       },
       {
         "url": "players/1474",
         "image": "images/no_image.png",
-        "id": "s/1474",
+        "id": 1474,
         "name": "Новиков Александр",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -272,7 +272,7 @@
       {
         "url": "players/5810",
         "image": "images/no_image.png",
-        "id": "s/5810",
+        "id": 5810,
         "name": "Дружинин Антон",
         "username": "DAP25"
       }
@@ -291,16 +291,16 @@
       {
         "url": "players/2050",
         "image": "images/no_image.png",
-        "id": "s/2050",
+        "id": 2050,
         "name": "Рычков Андрей",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/4365",
         "image": "images/no_image.png",
-        "id": "s/4365",
+        "id": 4365,
         "name": "Пчелкина Евгения",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -317,16 +317,16 @@
       {
         "url": "players/5587",
         "image": "images/no_image.png",
-        "id": "s/5587",
+        "id": 5587,
         "name": "Трофимов Владимир",
-        "username": ""
+        "username": null
       },
       {
         "url": "players/6337",
         "image": "images/no_image.png",
-        "id": "s/6337",
+        "id": 6337,
         "name": "Поликарпова Елена",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -343,16 +343,16 @@
       {
         "url": "players/6055",
         "image": "images/no_image.png",
-        "id": "s/6055",
+        "id": 6055,
         "name": "Макеечева Ирина",
         "username": "BOO"
       },
       {
         "url": "players/5733",
         "image": "images/no_image.png",
-        "id": "s/5733",
+        "id": 5733,
         "name": "Крупенникова Евгения",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -369,16 +369,16 @@
       {
         "url": "players/5808",
         "image": "../../upload/img/ru/players/mini_5808.gif",
-        "id": "s/5808",
+        "id": 5808,
         "name": "Луговой Андрей",
         "username": "am0rph1s"
       },
       {
         "url": "players/4365",
         "image": "images/no_image.png",
-        "id": "s/4365",
+        "id": 4365,
         "name": "Пчелкина Евгения",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -395,16 +395,16 @@
       {
         "url": "players/5471",
         "image": "images/no_image.png",
-        "id": "s/5471",
+        "id": 5471,
         "name": "Дзюба Сергей",
         "username": "sergo1529"
       },
       {
         "url": "players/290",
         "image": "images/no_image.png",
-        "id": "s/290",
+        "id": 290,
         "name": "Рогова Ольга",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -421,7 +421,7 @@
       {
         "url": "players/4207",
         "image": "../../upload/img/ru/players/mini_4207.jpg",
-        "id": "s/4207",
+        "id": 4207,
         "name": "Потапов Алексей",
         "username": "aloy"
       }
@@ -440,9 +440,9 @@
       {
         "url": "players/5424",
         "image": "images/no_image.png",
-        "id": "s/5424",
+        "id": 5424,
         "name": "Башкин Николай",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -459,9 +459,9 @@
       {
         "url": "players/2725",
         "image": "images/no_image.png",
-        "id": "s/2725",
+        "id": 2725,
         "name": "Голунова Ольга",
-        "username": ""
+        "username": null
       }
     ]
   },
@@ -478,16 +478,16 @@
       {
         "url": "players/4348",
         "image": "images/no_image.png",
-        "id": "s/4348",
+        "id": 4348,
         "name": "Сенько Игорь",
         "username": "iscommon"
       },
       {
         "url": "players/4419",
         "image": "images/no_image.png",
-        "id": "s/4419",
+        "id": 4419,
         "name": "Сенько Павел",
-        "username": ""
+        "username": null
       }
     ]
   }
