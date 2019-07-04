@@ -103,7 +103,7 @@ export default class Parser {
 
         const $rows = $(".members > .item:nth-child(5) > table > tbody > tr");
 
-        const aaa = $rows.map((i, row) => {
+        return $rows.map((i, row) => {
             const $td = $(row).children("td");
 
             const players1 = $td.eq(1).find("a").map((i, a) => {
@@ -150,10 +150,6 @@ export default class Parser {
                 },
             };
         }).get();
-
-        console.log(JSON.stringify(aaa));
-
-        return aaa;
     }
 
 }
