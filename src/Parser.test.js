@@ -3,7 +3,7 @@ import Parser from "./Parser";
 
 describe("Parser", () => {
 
-    test("getTournaments parse tournaments-page.html to tournaments-page.json", () => {
+    test("getTournaments [tournaments-page.html -> getTournaments.json]", () => {
         const html = fs.readFileSync("./tests-data/tournaments-page.html", "utf8");
         const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTournaments.json", "utf8"));
 
