@@ -3,54 +3,46 @@ import Parser from "./Parser";
 
 describe("Parser", () => {
 
-    test("getTournaments [tournaments-page.html -> getTournaments.json]", () => {
-        const html = fs.readFileSync("./tests-data/tournaments-page.html", "utf8");
-        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTournaments.json", "utf8"));
+    const tests = [
+        {
+            method: "getTournaments",
+            htmlFile: "tournaments-page.html",
+            resultFile: "getTournaments.json",
+        },
+        {
+            method: "getTeams",
+            htmlFile: "tournament-doubles.html",
+            resultFile: "getTeams-doubles.json",
+        },
+        {
+            method: "getTeams",
+            htmlFile: "tournament-singles.html",
+            resultFile: "getTeams-singles.json",
+        },
+        {
+            method: "getMatches",
+            htmlFile: "tournament-doubles.html",
+            resultFile: "getMatches-doubles.json",
+        },
+        {
+            method: "getMatches",
+            htmlFile: "tournament-singles.html",
+            resultFile: "getMatches-singles.json",
+        },
+    ];
 
-        const parser = new Parser();
-        const result = parser.getTournaments(html);
+    tests.forEach(data => {
+        const { method, htmlFile, resultFile } = data;
 
-        expect(result).toEqual(expectedResult);
-    });
+        test(`${method} [${htmlFile} -> ${resultFile}]`, () => {
+            const html = fs.readFileSync(`./tests-data/${htmlFile}`, "utf8");
+            const expectedResult = JSON.parse(fs.readFileSync(`./tests-data/${resultFile}`, "utf8"));
 
-    test("getTeams [tournament-doubles.html -> getTeams-doubles.json]", () => {
-        const html = fs.readFileSync("./tests-data/tournament-doubles.html", "utf8");
-        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTeams-doubles.json", "utf8"));
+            const parser = new Parser();
+            const result = parser[method](html);
 
-        const parser = new Parser();
-        const result = parser.getTeams(html);
-
-        expect(result).toEqual(expectedResult);
-    });
-
-    test("getTeams [tournament-singles.html -> getTeams-singles.json]", () => {
-        const html = fs.readFileSync("./tests-data/tournament-singles.html", "utf8");
-        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getTeams-singles.json", "utf8"));
-
-        const parser = new Parser();
-        const result = parser.getTeams(html);
-
-        expect(result).toEqual(expectedResult);
-    });
-
-    test("getMatches [tournament-doubles.html -> getMatches-doubles.json]", () => {
-        const html = fs.readFileSync("./tests-data/tournament-doubles.html", "utf8");
-        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getMatches-doubles.json", "utf8"));
-
-        const parser = new Parser();
-        const result = parser.getMatches(html);
-
-        expect(result).toEqual(expectedResult);
-    });
-
-    test("getMatches [tournament-singles.html -> getMatches-singles.json]", () => {
-        const html = fs.readFileSync("./tests-data/tournament-singles.html", "utf8");
-        const expectedResult = JSON.parse(fs.readFileSync("./tests-data/getMatches-singles.json", "utf8"));
-
-        const parser = new Parser();
-        const result = parser.getMatches(html);
-
-        expect(result).toEqual(expectedResult);
+            expect(result).toEqual(expectedResult);
+        });
     });
 
 });
