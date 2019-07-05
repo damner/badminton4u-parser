@@ -1,0 +1,688 @@
+[
+  {
+    "id": 5510,
+    "url": "players/5510",
+    "n": 1,
+    "name": "Языкова Юлия",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 320,
+      "singlesDate": "22.04.2018",
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 1266,
+    "url": "players/1266",
+    "n": 2,
+    "name": "Якимов Денис",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 540,
+      "singlesDate": "19.05.2019",
+      "doubles": 516,
+      "doublesDate": "03.07.2019"
+    }
+  },
+  {
+    "id": 5327,
+    "url": "players/5327",
+    "n": 3,
+    "name": "Якимов Дмитрий",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 250,
+      "singlesDate": "03.02.2018",
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 5576,
+    "url": "players/5576",
+    "n": 4,
+    "name": "Якимов Ярослав",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 286,
+      "singlesDate": "27.05.2018",
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 4959,
+    "url": "players/4959",
+    "n": 5,
+    "name": "Якимова Мария",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 390,
+      "doublesDate": "15.10.2017"
+    }
+  },
+  {
+    "id": 2538,
+    "url": "players/2538",
+    "n": 6,
+    "name": "Яковлев Александр",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 575,
+      "singlesDate": "19.05.2019",
+      "doubles": 548,
+      "doublesDate": "30.03.2019"
+    }
+  },
+  {
+    "id": 4359,
+    "url": "players/4359",
+    "n": 7,
+    "name": "Яковлев Антон",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 472,
+      "doublesDate": "25.03.2017"
+    }
+  },
+  {
+    "id": 985,
+    "url": "players/985",
+    "n": 8,
+    "name": "Яковлев Сергей",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 949,
+      "singlesDate": "01.04.2016",
+      "doubles": 658,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 1396,
+    "url": "players/1396",
+    "n": 9,
+    "name": "Яковлев Сергей А",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 1049,
+      "doublesDate": "31.03.2019"
+    }
+  },
+  {
+    "id": 986,
+    "url": "players/986",
+    "n": 10,
+    "name": "Яковлев Сергей С",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 548,
+      "doublesDate": "03.07.2016"
+    }
+  },
+  {
+    "id": 4523,
+    "url": "players/4523",
+    "n": 11,
+    "name": "Яковлева Алёна",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 803,
+      "doublesDate": "23.06.2018"
+    }
+  },
+  {
+    "id": 2555,
+    "url": "players/2555",
+    "n": 12,
+    "name": "Яковлева Вера",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 552,
+      "singlesDate": "17.09.2016",
+      "doubles": 558,
+      "doublesDate": "29.05.2016"
+    }
+  },
+  {
+    "id": 4525,
+    "url": "players/4525",
+    "n": 13,
+    "name": "Яковлева Диана",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 663,
+      "doublesDate": "16.12.2017"
+    }
+  },
+  {
+    "id": 308,
+    "url": "players/308",
+    "n": 14,
+    "name": "Яковлева Лена",
+    "username": null,
+    "city": "Москва",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 200,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 295,
+    "url": "players/295",
+    "n": 15,
+    "name": "Яковленкова И",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 530,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 6240,
+    "url": "players/6240",
+    "n": 16,
+    "name": "Якупова Ксения",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 364,
+      "singlesDate": "06.03.2019",
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 5903,
+    "url": "players/5903",
+    "n": 17,
+    "name": "Якутис Яна",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 459,
+      "doublesDate": "24.02.2019"
+    }
+  },
+  {
+    "id": 4331,
+    "url": "players/4331",
+    "n": 18,
+    "name": "Якушев Андрей",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 721,
+      "doublesDate": "22.01.2017"
+    }
+  },
+  {
+    "id": 6608,
+    "url": "players/6608",
+    "n": 19,
+    "name": "Якушев Владимир",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 476,
+      "doublesDate": "22.06.2019"
+    }
+  },
+  {
+    "id": 5412,
+    "url": "players/5412",
+    "n": 20,
+    "name": "Якушева Марина",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 605,
+      "doublesDate": "19.01.2018"
+    }
+  },
+  {
+    "id": 1139,
+    "url": "players/1139",
+    "n": 21,
+    "name": "Якушов Артем",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 472,
+      "singlesDate": "01.04.2016",
+      "doubles": 456,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 2649,
+    "url": "players/2649",
+    "n": 22,
+    "name": "Ялда Константин",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 625,
+      "doublesDate": "25.09.2016"
+    }
+  },
+  {
+    "id": 2677,
+    "url": "players/2677",
+    "n": 23,
+    "name": "Ялда Ксения",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 556,
+      "doublesDate": "25.09.2016"
+    }
+  },
+  {
+    "id": 2676,
+    "url": "players/2676",
+    "n": 24,
+    "name": "Ялда Людмила",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 556,
+      "doublesDate": "25.09.2016"
+    }
+  },
+  {
+    "id": 6241,
+    "url": "players/6241",
+    "n": 25,
+    "name": "Яльчик Ольга",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 315,
+      "singlesDate": "06.03.2019",
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 4563,
+    "url": "players/4563",
+    "n": 26,
+    "name": "Ям Михаил",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 653,
+      "singlesDate": "22.07.2018",
+      "doubles": 776,
+      "doublesDate": "22.07.2018"
+    }
+  },
+  {
+    "id": 507,
+    "url": "players/507",
+    "n": 27,
+    "name": "Ямпольский Илья",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 840,
+      "singlesDate": "01.04.2016",
+      "doubles": 834,
+      "doublesDate": "15.10.2017"
+    }
+  },
+  {
+    "id": 3024,
+    "url": "players/3024",
+    "n": 28,
+    "name": "Янборисов Эльдар",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 682,
+      "singlesDate": "01.04.2016",
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 2702,
+    "url": "players/2702",
+    "n": 29,
+    "name": "Янгаева Татьяна",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 654,
+      "doublesDate": "15.01.2017"
+    }
+  },
+  {
+    "id": 1874,
+    "url": "players/1874",
+    "n": 30,
+    "name": "Янковец Александр",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 645,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 6015,
+    "url": "players/6015",
+    "n": 31,
+    "name": "Янковский Дмитрий",
+    "username": "Dimon",
+    "city": null,
+    "rating": {
+      "singles": 449,
+      "singlesDate": "13.04.2019",
+      "doubles": 348,
+      "doublesDate": "06.04.2019"
+    }
+  },
+  {
+    "id": 687,
+    "url": "players/687",
+    "n": 32,
+    "name": "Янов Евгений",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 914,
+      "singlesDate": "01.04.2016",
+      "doubles": 904,
+      "doublesDate": "24.11.2018"
+    }
+  },
+  {
+    "id": 4989,
+    "url": "players/4989",
+    "n": 33,
+    "name": "Янов Евгений Сергеевич",
+    "username": "evgen",
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": null,
+      "doublesDate": null
+    }
+  },
+  {
+    "id": 1664,
+    "url": "players/1664",
+    "n": 34,
+    "name": "Янова Оксана",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 811,
+      "singlesDate": "04.12.2016",
+      "doubles": 740,
+      "doublesDate": "26.11.2017"
+    }
+  },
+  {
+    "id": 1141,
+    "url": "players/1141",
+    "n": 35,
+    "name": "Януц Татьяна",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 773,
+      "doublesDate": "07.04.2019"
+    }
+  },
+  {
+    "id": 2488,
+    "url": "players/2488",
+    "n": 36,
+    "name": "Янушкевич Милана",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 470,
+      "singlesDate": "23.04.2016",
+      "doubles": 670,
+      "doublesDate": "23.04.2016"
+    }
+  },
+  {
+    "id": 341,
+    "url": "players/341",
+    "n": 37,
+    "name": "Янчук Анна",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 823,
+      "singlesDate": "01.04.2016",
+      "doubles": 718,
+      "doublesDate": "24.11.2018"
+    }
+  },
+  {
+    "id": 610,
+    "url": "players/610",
+    "n": 38,
+    "name": "Япарова М",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 426,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 2746,
+    "url": "players/2746",
+    "n": 39,
+    "name": "Яремчук Александр",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 814,
+      "doublesDate": "06.02.2019"
+    }
+  },
+  {
+    "id": 2695,
+    "url": "players/2695",
+    "n": 40,
+    "name": "Яремчук Наталия",
+    "username": null,
+    "city": "Санкт- Петербург",
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 502,
+      "doublesDate": "04.11.2018"
+    }
+  },
+  {
+    "id": 849,
+    "url": "players/849",
+    "n": 41,
+    "name": "Яркина Оксана",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 707,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 5779,
+    "url": "players/5779",
+    "n": 42,
+    "name": "Ярмолюк Мария",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 316,
+      "singlesDate": "24.03.2019",
+      "doubles": 316,
+      "doublesDate": "21.10.2018"
+    }
+  },
+  {
+    "id": 1753,
+    "url": "players/1753",
+    "n": 43,
+    "name": "Ярославцев Степан",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 1079,
+      "singlesDate": "04.11.2017",
+      "doubles": 1074,
+      "doublesDate": "31.03.2019"
+    }
+  },
+  {
+    "id": 1825,
+    "url": "players/1825",
+    "n": 44,
+    "name": "Ярославцева Анастасия",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 433,
+      "singlesDate": "23.04.2016",
+      "doubles": 433,
+      "doublesDate": "24.09.2016"
+    }
+  },
+  {
+    "id": 2445,
+    "url": "players/2445",
+    "n": 45,
+    "name": "Ярошевич Александр",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 856,
+      "singlesDate": "23.04.2016",
+      "doubles": 873,
+      "doublesDate": "23.04.2016"
+    }
+  },
+  {
+    "id": 822,
+    "url": "players/822",
+    "n": 46,
+    "name": "Ясинецкий Валерий",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": 460,
+      "singlesDate": "01.04.2016",
+      "doubles": 555,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 592,
+    "url": "players/592",
+    "n": 47,
+    "name": "Ястребов Сергей",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 463,
+      "doublesDate": "01.04.2016"
+    }
+  },
+  {
+    "id": 4217,
+    "url": "players/4217",
+    "n": 48,
+    "name": "Яшин Дмитрий",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 478,
+      "doublesDate": "16.02.2019"
+    }
+  },
+  {
+    "id": 4916,
+    "url": "players/4916",
+    "n": 49,
+    "name": "Яшуткин Андрей",
+    "username": null,
+    "city": null,
+    "rating": {
+      "singles": null,
+      "singlesDate": null,
+      "doubles": 344,
+      "doublesDate": "24.03.2018"
+    }
+  }
+]

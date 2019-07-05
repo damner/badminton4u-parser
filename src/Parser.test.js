@@ -29,6 +29,11 @@ describe("Parser", () => {
             htmlFile: "tournament-singles.html",
             resultFile: "getMatches-singles.json",
         },
+        {
+            method: "getPlayers",
+            htmlFile: "rating.html",
+            resultFile: "getPlayers.json",
+        },
     ];
 
     tests.forEach(data => {

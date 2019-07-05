@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://badminton4u.ru/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="бадминтон, турниры по бадминтону, любительский бадминтон, бадминтон в москве, поиграть в бадминтон">
+    <meta name="description" content="Любительская ассоциация бадминтона">
+    <meta name="yandex-verification" content="25f234eabd2bc1aa" />
+    <title>Игроки | Любительская ассоциация бадминтона</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    <link type="text/css" rel="stylesheet" href="plugins/jquery/jquery-ui/jquery-ui-1.10.4.custom.min.css">
+    <!--<link href="css/base.css" rel="stylesheet">-->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="plugins/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery/jquery-ui/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="plugins/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/online.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body onload="">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43621964 = new Ya.Metrika({
+                    id:43621964,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43621964" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<div class="popup-overlay"></div>
+<div class="login-popup-form">
+    <div class="popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Вход на сайт</h2></div>
+
+    <form action="/players/?let=%D0%AF" method="post">
+        <input type="text" name="login" placeholder="Логин">
+        <input type="password" name="password" placeholder="Пароль">
+        <a href="forgot/" class="bl">Забыли пароль?</a>
+        <input type="submit" class="button" value="Войти" style="margin-top:10px;">
+    </form>
+</div>
+
+
+<div class="mail-2-popup-overlay">	</div>
+<div class="mail-2-popup-form">
+    <div class="mail-2-popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Отправка личного сообщения</h2></div>
+    <form action="messages/" method="post">
+        <input type="hidden" name="player_id" value="" id="mail-popup-player">
+        <div class="adr">Сообщение для: <img class="userpic" src="" alt="" id="mail-popup-img"><span id="mail-popup-span">Николай Иванов (<a href="" class="username">Brad</a>)</span></div>
+        <!--<input type="text" placeholder="Кому">-->
+        <textarea placeholder="Текст сообщения" name="text"></textarea>
+        <input type="submit" class="button" value="Отправить">
+    </form>
+</div>
+
+<div class="mail-3-popup-overlay">	</div>
+<div class="mail-3-popup-form">
+    <div class="mail-3-popup-close-btn"><span class="icon-cancel"></span></div>
+    <div class="title"><h2>Редактирование сообщения</h2></div>
+    <input type="hidden" name="player_id" value="" id="mail-popup-player">
+    <textarea placeholder="Текст сообщения" name="text" id="mail-3-popup-text" mes_id=""></textarea>
+    <input type="button" class="button" value="Сохранить" onclick="editMessage();">
+</div>
+
+<header>
+
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-top-message inline">
+
+                    </div>
+
+                    <div class="header-top-menu inline">
+                        <ul>
+                            <li><a class="to-login">Вход</a></li>
+                            <li><a class="to-register" href="registration/">Регистрация</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="social inline">
+
+                        <a href="https://vk.com/public37641138" target="_blank" class="icon-vk icon-social"></a>
+
+                        <a href="https://www.facebook.com/badminton4u.ru/" target="_blank" class="icon-facebook icon-social"></a>
+
+                        <a href="rss/" target="_blank" class="icon-rss icon-social"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="wrapper">
+                        <div class="logo"><a href="/"></a></div>
+                        <!--<div class="subtitle">Ассоциация<br>настольного тенниса</div>-->
+                    </div>
+                </div>
+
+
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://www.badm.ru/"><img src="../../upload/banners/40.jpg" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://www.prolink.ru/"><img src="../../upload/banners/39.png" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="http://lining.center/"><img src="../../upload/banners/41.jpg" alt=""></a></div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="banner" style="text-align:center; background:none;"><a href="https://badmintonworld.ru/"><img src="../../upload/banners/57.jpg" alt=""></a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div id="main-menu">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="main-menu-wrapper">
+                        <div class="main-menu">
+                            <ul class="inline">
+
+                                <li><a href="tours/">Календарь турниров</a></li>
+
+                                <li><a href="players/">Рейтинг игроков</a></li>
+
+                                <li><a href="forum/">Форум</a></li>
+
+                                <li><a href="places/">Где поиграть?</a></li>
+
+                                <li><a href="photos/">Галерея</a></li>
+
+                                <li><a href="news/">Новости</a></li>
+
+                                <li><a href="content/11">Контакты</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <div id="search-inner">
+                                <form action="/search/" method="get">
+                                    <input type="text" id="search" name="s" value="" placeholder="Поиск по сайту">
+                                    <input type="submit" class="button" value="">
+                                </form>
+                            </div>
+                            <div id="search-btn"><span class="icon-search"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="main-page">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-9">
+                    <div class="main-column">
+
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li class="active">Игроки</li>
+                            </ul>
+                        </div>
+
+                        <div class="players-page page">
+
+                            <!--<div class="title"><h1>Игроки</h1></div>-->
+
+                            <a name="list"></a>
+                            <div class="players block">
+                                <!--<h2>Список игроков</h2>-->
+                                <div class="players-filter">
+                                    <div class="players-sort-tabs">
+                                        <ul>
+                                            <li><a class="active" href="players/#list">По алфавиту</a></li>
+                                            <li><a href="players/?rat_s#list">По рейтингу (одиночки)</a></li>
+                                            <li><a href="players/?rat_d#list">По рейтингу (пары)</a></li>
+                                            <li><a href="statistics/">Статистика</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="players-sort-alphabet">
+                                        <ul>
+
+                                            <li><a href="players/?let=А#list">А</a></li>
+
+                                            <li><a href="players/?let=Б#list">Б</a></li>
+
+                                            <li><a href="players/?let=В#list">В</a></li>
+
+                                            <li><a href="players/?let=Г#list">Г</a></li>
+
+                                            <li><a href="players/?let=Д#list">Д</a></li>
+
+                                            <li><a href="players/?let=Е#list">Е</a></li>
+
+                                            <li><a href="players/?let=Ё#list">Ё</a></li>
+
+                                            <li><a href="players/?let=Ж#list">Ж</a></li>
+
+                                            <li><a href="players/?let=З#list">З</a></li>
+
+                                            <li><a href="players/?let=И#list">И</a></li>
+
+                                            <li><a href="players/?let=Й#list">Й</a></li>
+
+                                            <li><a href="players/?let=К#list">К</a></li>
+
+                                            <li><a href="players/?let=Л#list">Л</a></li>
+
+                                            <li><a href="players/?let=М#list">М</a></li>
+
+                                            <li><a href="players/?let=Н#list">Н</a></li>
+
+                                            <li><a href="players/?let=О#list">О</a></li>
+
+                                            <li><a href="players/?let=П#list">П</a></li>
+
+                                            <li><a href="players/?let=Р#list">Р</a></li>
+
+                                            <li><a href="players/?let=С#list">С</a></li>
+
+                                            <li><a href="players/?let=Т#list">Т</a></li>
+
+                                            <li><a href="players/?let=У#list">У</a></li>
+
+                                            <li><a href="players/?let=Ф#list">Ф</a></li>
+
+                                            <li><a href="players/?let=Х#list">Х</a></li>
+
+                                            <li><a href="players/?let=Ц#list">Ц</a></li>
+
+                                            <li><a href="players/?let=Ч#list">Ч</a></li>
+
+                                            <li><a href="players/?let=Ш#list">Ш</a></li>
+
+                                            <li><a href="players/?let=Щ#list">Щ</a></li>
+
+                                            <li><a href="players/?let=Э#list">Э</a></li>
+
+                                            <li><a href="players/?let=Ю#list">Ю</a></li>
+
+                                            <li class="active"><a href="players/?let=Я#list">Я</a></li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="players-sort-rating">
+                                        <form action="" method="get">
+
+                                            <label for="">Имя, Фамилия</label>
+                                            <input type="text" name="name" value="">
+                                            <label for="">Логин</label>
+                                            <input type="text" name="login" value=""><br><br>
+                                            <label for="">ID</label>
+                                            <input type="text" name="player_id" value="" style="width:80px;">
+                                            <label for="">Город</label>
+                                            <input type="text" name="city" value="">
+
+
+                                            <input type="submit" class="button" name="" value="Искать">
+                                        </form>
+                                    </div>
+                                </div>
+                                <table class="bordered-table">
+                                    <tr>
+                                        <th>№</th>
+                                        <th>ФИО</th>
+                                        <th>Ник на сайте</th>
+                                        <th>Город</th>
+                                        <th class="center">Рейтинг<br />(одиночный)</th>
+                                        <th>Дата расчета</th>
+                                        <th class="center">Рейтинг<br />(парный)</th>
+                                        <th>Дата расчета</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="players/5510">Языкова Юлия</a></td>
+                                        <td><a href="players/5510" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">320</td>
+                                        <td class="center">22.04.2018</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="players/1266">Якимов Денис</a></td>
+                                        <td><a href="players/1266" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">540</td>
+                                        <td class="center">19.05.2019</td>
+                                        <td class="center">516</td>
+                                        <td class="center">03.07.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="players/5327">Якимов Дмитрий</a></td>
+                                        <td><a href="players/5327" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">250</td>
+                                        <td class="center">03.02.2018</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="players/5576">Якимов Ярослав</a></td>
+                                        <td><a href="players/5576" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">286</td>
+                                        <td class="center">27.05.2018</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="players/4959">Якимова Мария</a></td>
+                                        <td><a href="players/4959" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">390</td>
+                                        <td class="center">15.10.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>6</td>
+                                        <td><a href="players/2538">Яковлев Александр</a></td>
+                                        <td><a href="players/2538" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">575</td>
+                                        <td class="center">19.05.2019</td>
+                                        <td class="center">548</td>
+                                        <td class="center">30.03.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>7</td>
+                                        <td><a href="players/4359">Яковлев Антон</a></td>
+                                        <td><a href="players/4359" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">472</td>
+                                        <td class="center">25.03.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>8</td>
+                                        <td><a href="players/985">Яковлев Сергей</a></td>
+                                        <td><a href="players/985" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">949</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">658</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>9</td>
+                                        <td><a href="players/1396">Яковлев Сергей А</a></td>
+                                        <td><a href="players/1396" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">1049</td>
+                                        <td class="center">31.03.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>10</td>
+                                        <td><a href="players/986">Яковлев Сергей С</a></td>
+                                        <td><a href="players/986" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">548</td>
+                                        <td class="center">03.07.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11</td>
+                                        <td><a href="players/4523">Яковлева Алёна</a></td>
+                                        <td><a href="players/4523" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">803</td>
+                                        <td class="center">23.06.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12</td>
+                                        <td><a href="players/2555">Яковлева Вера</a></td>
+                                        <td><a href="players/2555" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">552</td>
+                                        <td class="center">17.09.2016</td>
+                                        <td class="center">558</td>
+                                        <td class="center">29.05.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>13</td>
+                                        <td><a href="players/4525">Яковлева Диана</a></td>
+                                        <td><a href="players/4525" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">663</td>
+                                        <td class="center">16.12.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>14</td>
+                                        <td><a href="players/308">Яковлева Лена</a></td>
+                                        <td><a href="players/308" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Москва</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">200</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>15</td>
+                                        <td><a href="players/295">Яковленкова И</a></td>
+                                        <td><a href="players/295" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">530</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16</td>
+                                        <td><a href="players/6240">Якупова Ксения</a></td>
+                                        <td><a href="players/6240" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">364</td>
+                                        <td class="center">06.03.2019</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>17</td>
+                                        <td><a href="players/5903">Якутис Яна</a></td>
+                                        <td><a href="players/5903" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">459</td>
+                                        <td class="center">24.02.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>18</td>
+                                        <td><a href="players/4331">Якушев Андрей</a></td>
+                                        <td><a href="players/4331" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">721</td>
+                                        <td class="center">22.01.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>19</td>
+                                        <td><a href="players/6608">Якушев Владимир</a></td>
+                                        <td><a href="players/6608" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">476</td>
+                                        <td class="center">22.06.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>20</td>
+                                        <td><a href="players/5412">Якушева Марина</a></td>
+                                        <td><a href="players/5412" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">605</td>
+                                        <td class="center">19.01.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>21</td>
+                                        <td><a href="players/1139">Якушов Артем</a></td>
+                                        <td><a href="players/1139" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">472</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">456</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>22</td>
+                                        <td><a href="players/2649">Ялда Константин</a></td>
+                                        <td><a href="players/2649" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">625</td>
+                                        <td class="center">25.09.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>23</td>
+                                        <td><a href="players/2677">Ялда Ксения</a></td>
+                                        <td><a href="players/2677" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">556</td>
+                                        <td class="center">25.09.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>24</td>
+                                        <td><a href="players/2676">Ялда Людмила</a></td>
+                                        <td><a href="players/2676" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">556</td>
+                                        <td class="center">25.09.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>25</td>
+                                        <td><a href="players/6241">Яльчик Ольга</a></td>
+                                        <td><a href="players/6241" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">315</td>
+                                        <td class="center">06.03.2019</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>26</td>
+                                        <td><a href="players/4563">Ям Михаил</a></td>
+                                        <td><a href="players/4563" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">653</td>
+                                        <td class="center">22.07.2018</td>
+                                        <td class="center">776</td>
+                                        <td class="center">22.07.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>27</td>
+                                        <td><a href="players/507">Ямпольский Илья</a></td>
+                                        <td><a href="players/507" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">840</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">834</td>
+                                        <td class="center">15.10.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>28</td>
+                                        <td><a href="players/3024">Янборисов Эльдар</a></td>
+                                        <td><a href="players/3024" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">682</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>29</td>
+                                        <td><a href="players/2702">Янгаева Татьяна</a></td>
+                                        <td><a href="players/2702" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">654</td>
+                                        <td class="center">15.01.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>30</td>
+                                        <td><a href="players/1874">Янковец Александр</a></td>
+                                        <td><a href="players/1874" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">645</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>31</td>
+                                        <td><a href="players/6015">Янковский Дмитрий</a></td>
+                                        <td><a href="players/6015" class="user-name"><span class="status offline"></span>Dimon</a></td>
+                                        <td class="center"></td>
+                                        <td class="center">449</td>
+                                        <td class="center">13.04.2019</td>
+                                        <td class="center">348</td>
+                                        <td class="center">06.04.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>32</td>
+                                        <td><a href="players/687">Янов Евгений</a></td>
+                                        <td><a href="players/687" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">914</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">904</td>
+                                        <td class="center">24.11.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>33</td>
+                                        <td><a href="players/4989">Янов Евгений Сергеевич</a></td>
+                                        <td><a href="players/4989" class="user-name"><span class="status offline"></span>evgen</a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>34</td>
+                                        <td><a href="players/1664">Янова Оксана</a></td>
+                                        <td><a href="players/1664" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">811</td>
+                                        <td class="center">04.12.2016</td>
+                                        <td class="center">740</td>
+                                        <td class="center">26.11.2017</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>35</td>
+                                        <td><a href="players/1141">Януц Татьяна</a></td>
+                                        <td><a href="players/1141" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">773</td>
+                                        <td class="center">07.04.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>36</td>
+                                        <td><a href="players/2488">Янушкевич Милана</a></td>
+                                        <td><a href="players/2488" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">470</td>
+                                        <td class="center">23.04.2016</td>
+                                        <td class="center">670</td>
+                                        <td class="center">23.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>37</td>
+                                        <td><a href="players/341">Янчук Анна</a></td>
+                                        <td><a href="players/341" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">823</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">718</td>
+                                        <td class="center">24.11.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>38</td>
+                                        <td><a href="players/610">Япарова М</a></td>
+                                        <td><a href="players/610" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">426</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>39</td>
+                                        <td><a href="players/2746">Яремчук Александр</a></td>
+                                        <td><a href="players/2746" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">814</td>
+                                        <td class="center">06.02.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>40</td>
+                                        <td><a href="players/2695">Яремчук Наталия</a></td>
+                                        <td><a href="players/2695" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center">Санкт- Петербург</td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">502</td>
+                                        <td class="center">04.11.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>41</td>
+                                        <td><a href="players/849">Яркина Оксана</a></td>
+                                        <td><a href="players/849" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">707</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>42</td>
+                                        <td><a href="players/5779">Ярмолюк Мария</a></td>
+                                        <td><a href="players/5779" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">316</td>
+                                        <td class="center">24.03.2019</td>
+                                        <td class="center">316</td>
+                                        <td class="center">21.10.2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>43</td>
+                                        <td><a href="players/1753">Ярославцев Степан</a></td>
+                                        <td><a href="players/1753" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">1079</td>
+                                        <td class="center">04.11.2017</td>
+                                        <td class="center">1074</td>
+                                        <td class="center">31.03.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>44</td>
+                                        <td><a href="players/1825">Ярославцева Анастасия</a></td>
+                                        <td><a href="players/1825" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">433</td>
+                                        <td class="center">23.04.2016</td>
+                                        <td class="center">433</td>
+                                        <td class="center">24.09.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>45</td>
+                                        <td><a href="players/2445">Ярошевич Александр</a></td>
+                                        <td><a href="players/2445" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">856</td>
+                                        <td class="center">23.04.2016</td>
+                                        <td class="center">873</td>
+                                        <td class="center">23.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>46</td>
+                                        <td><a href="players/822">Ясинецкий Валерий</a></td>
+                                        <td><a href="players/822" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">460</td>
+                                        <td class="center">01.04.2016</td>
+                                        <td class="center">555</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>47</td>
+                                        <td><a href="players/592">Ястребов Сергей</a></td>
+                                        <td><a href="players/592" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">463</td>
+                                        <td class="center">01.04.2016</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>48</td>
+                                        <td><a href="players/4217">Яшин Дмитрий</a></td>
+                                        <td><a href="players/4217" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">478</td>
+                                        <td class="center">16.02.2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>49</td>
+                                        <td><a href="players/4916">Яшуткин Андрей</a></td>
+                                        <td><a href="players/4916" class="user-name"><span class="status offline"></span></a></td>
+                                        <td class="center"></td>
+                                        <td class="center">-</td>
+                                        <td class="center">-</td>
+                                        <td class="center">344</td>
+                                        <td class="center">24.03.2018</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="right-sidebar sidebar">
+
+
+
+
+                        <div class="online block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2><a href="players/">Сейчас на сайте</a></h2>
+                            </div>
+                            <div class="row">
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7"><div style="margin-top: 5px;">Всего: 0 игроков и 1 гость</div></div>
+                                <div class="col-xs-5"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="rating-up block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Победитель рейтинга</h2>
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <a href="players/1266" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1266">Якимов Денис</a></div>
+                                    <div class="rating">+25</div>
+                                    <div class="center"><a href="http://lining.center/catalog/volany/volan_1/" target="_blank"><img src="upload/opt/li-ning-a-60.jpg"></a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8"><div style="margin-top:10px; font-size:1.2rem;">по результатам [d] прошлой недели</div></div>
+                                <div class="col-xs-4"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"></div>
+
+                        <div class="last-nodes block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2><a href="forum/">Последние темы на форуме</a></h2>
+                            </div>
+                            <div class="items">
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/80">Продаю Ракетки Astrox 77 (3 шт.)</a></h4></div>
+
+                                    <div class="date"><span class="day">21 июня</span><span class="time">20:48</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/80"> 2</a>
+                                    <span class="user-name"><a href="players/6501">Dobrotin2006</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/2">Пожелания по работе сайта</a></h4></div>
+
+                                    <div class="date"><span class="day">20 июня</span><span class="time">04:10</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/2"> 17</a>
+                                    <span class="user-name"><a href="players/6522">Kovalka</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/79">Продам новую спортивную сумку</a></h4></div>
+
+                                    <div class="date"><span class="day">22 мая</span><span class="time">10:07</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/79"> 1</a>
+                                    <span class="user-name"><a href="players/4237">Nesya</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/78">Кроссовки для бадминтона продаю</a></h4></div>
+
+                                    <div class="date"><span class="day">12 мая</span><span class="time">18:29</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/78"> 1</a>
+                                    <span class="user-name"><a href="players/6382">Рыжевалова Елизавета</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/76">Сумка YONEX 9029</a></h4></div>
+
+                                    <div class="date"><span class="day">6 мая</span><span class="time">15:00</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/76"> 3</a>
+                                    <span class="user-name"><a href="players/4150">revnestle</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/75">Отцы и ДЕТИ</a></h4></div>
+
+                                    <div class="date"><span class="day">30 апреля</span><span class="time">10:04</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/75"> 14</a>
+                                    <span class="user-name"><a href="players/5949">dobrotin68</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/77">Утеряна (забыта?) ракетка Yonex Duora 10</a></h4></div>
+
+                                    <div class="date"><span class="day">26 апреля</span><span class="time">12:03</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/77"> 1</a>
+                                    <span class="user-name"><a href="players/4150">revnestle</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/8">Общие вопросы ЛАБ</a></h4></div>
+
+                                    <div class="date"><span class="day">9 апреля</span><span class="time">11:28</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/8"> 12</a>
+                                    <span class="user-name"><a href="players/6315">zifanya</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/69">Ракетка Kumpoo soul war vs</a></h4></div>
+
+                                    <div class="date"><span class="day">12 марта</span><span class="time">23:47</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/69"> 3</a>
+                                    <span class="user-name"><a href="players/4363">Pakhomych</a></span>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title"><h4><a href="themes/74">Продам ракетку Yonex Z-Force 2</a></h4></div>
+
+                                    <div class="date"><span class="day">10 марта</span><span class="time">16:32</span></div>
+
+                                    <a title="сообщения" class="icon icon-comment" href="themes/74"> 1</a>
+                                    <span class="user-name"><a href="players/6203">RelaxeR</a></span>
+                                </div>
+
+                            </div>
+                            <div class="link"><a class="icon-arws" href="forum/">форум</a></div>
+                        </div>
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"><a href="http://rsl-russia.ru/"><img src="../../upload/banners/35.jpg" alt=""></a></div>
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"></div>
+
+
+
+                        <div class="banner block" style="text-align:center; height:auto; background:none;"><a href="http://www.playbadminton.ru/"><img src="../../upload/banners/51.png" alt=""></a></div>
+
+
+
+
+                        <div class="rating-up block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Вышли на пик формы (пары)</h2>
+                            </div>
+                            <div class="items">
+
+                                <div class="item">
+                                    <a href="players/1266" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/1266">Якимов Денис</a></div>
+                                    <div class="rating">516</div>
+                                </div>
+
+                                <div class="item">
+                                    <a href="players/4367" class="userpic-s"><img src="images/no_image.png"></a>
+                                    <div class="name"><a href="players/4367">Курьянов Максим</a></div>
+                                    <div class="rating">646</div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8"><div style="margin-top:10px; font-size:1.2rem;">по рейтингу [d] за последние 10 дней</div></div>
+                                <div class="col-xs-4"><div class="link"><a class="icon-arws" href="players/">все игроки</a></div></div>
+                            </div>
+                        </div>
+
+
+                        <div class="numbers block wrapper">
+                            <div class="title">
+                                <div class="pattern"></div>
+                                <h2>Статистика</h2>
+                            </div>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Игроков в базе:<span><a href="players/">5397</a></span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Турниров:<span><a href="tours/?past">2029</a></span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Игр:<span>40150</span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-arws inline"></div>
+                                    <div class="inner inline">Дата выхода первого рейтинга:<span class="date">31.03.2012</span></div>
+                                </div>
+                            </div>
+                            <div class="link"><a class="icon-arws" href="statistics/">больше статистики</a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo-footer" onclick="window.location='/';"></div>
+                    <div class="desc">
+                        <!--<div class="subtitle">Любительская ассоциация бадминтона</div>-->
+                        Пропаганда общечеловеческих ценностей и здорового образа жизни, через развитие бадминтона как массового, общенационального вида спорта.
+                        <br /><br /><br />
+                        <a href="http://yauza.com" target="_blank">Разработка сайта: Yauza.com</a>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <!--<ul class="footer-menu">
+                     <li class="title"><a href="">Заголовок меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                     <li><a href="">Пункт меню</a></li>
+                    </ul>-->
+                </div>
+                <div class="col-xs-2">
+                    <ul class="footer-menu">
+                        <li class="title"><a href="/">Главная</a></li>
+
+                        <li><a href="tours/">Календарь турниров</a></li>
+
+                        <li><a href="players/">Рейтинг игроков</a></li>
+
+                        <li><a href="forum/">Форум</a></li>
+
+                        <li><a href="places/">Где поиграть?</a></li>
+
+                        <li><a href="photos/">Галерея</a></li>
+
+                        <li><a href="news/">Новости</a></li>
+
+                        <li><a href="content/11">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <ul class="footer-menu">
+                        <li class="title">Календарь</li>
+                        <li><a href="tours/">Ближайшие события</a></li>
+                        <li><a href="tours/?past">Прошедшие турниры</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="title">Игроки</li>
+                        <li><a href="players/">По алфавиту</a></li>
+                        <li><a href="players/?rat_s">Одиночки</a></li>
+                        <li><a href="players/?rat_d">Пары</a></li>
+                    </ul>
+                </div>
+                <div class="social inline">
+
+                    <a href="https://vk.com/public37641138" target="_blank" class="icon-vk icon-social"></a>
+
+                    <a href="https://www.facebook.com/badminton4u.ru/" target="_blank" class="icon-facebook icon-social"></a>
+
+                    <a href="rss/" target="_blank" class="icon-rss icon-social"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

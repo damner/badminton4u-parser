@@ -152,4 +152,38 @@ export default class Parser {
         }).get();
     }
 
+    getPlayers(html) {
+        const $ = cheerio.load(html);
+
+        const $rows = $(".players > table > tbody > tr:not(:first-child)");
+
+        return $rows.map((i, row) => {
+            const $td = $(row).children("td");
+
+            const href = $td.eq(1).find("a").attr("href");
+            const name = $td.eq(1).find("a").text();
+            const username = $td.eq(2).text();
+            const city = $td.eq(3).text();
+            const ratingSingles = $td.eq(4).text();
+            const ratingSinglesDate = $td.eq(5).text();
+            const ratingDoubles = $td.eq(6).text();
+            const ratingDoublesDate = $td.eq(7).text();
+
+            return {
+                id: +href.substr(8),
+                url: href,
+                n: parseInt($td.eq(0).text()) || null,
+                name: name,
+                username: username || null,
+                city: city || null,
+                rating: {
+                    singles: isNaN(ratingSingles) ? null : parseInt(ratingSingles),
+                    singlesDate: ratingSinglesDate.length <= 1 ? null : ratingSinglesDate,
+                    doubles: isNaN(ratingDoubles) ? null : parseInt(ratingDoubles),
+                    doublesDate: ratingDoublesDate.length <= 1 ? null : ratingDoublesDate,
+                }
+            };
+        }).get();
+    }
+
 }
