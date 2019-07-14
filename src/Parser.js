@@ -186,4 +186,56 @@ export default class Parser {
         }).get();
     }
 
+    getPlayerInfo(html) {
+        const $ = cheerio.load(html);
+
+        const $container = $(".profile-page");
+
+        const title = $container.find("> .title > h1").text();
+        const username = $container.find(".profile .desc > .user-name").text();
+
+        const $profileInfo = $container.find(".profile-info");
+        const $tables = $profileInfo.find(".user-rating-table");
+
+        const $ratingsRows = $tables.eq(0).find("> tbody > tr:not(:first-child)");
+
+        const ratings = $ratingsRows.map((i, row) => {
+            const $td = $(row).children("td");
+
+            return {
+                position: +$td.eq(0).text(),
+                title: $td.eq(1).text(),
+                rating: +$td.eq(2).text(),
+                date: $td.eq(3).text(),
+            };
+        }).get();
+
+        const $userInfoTable = $profileInfo.find(".user-info-table");
+
+        const info = $userInfoTable.find("> tbody > tr").map((i, row) => {
+            const $td = $(row).children("td");
+
+            return {
+                title: $td.eq(0).text(),
+                value: $td.eq(1).text(),
+            };
+        }).get();
+
+        console.log(JSON.stringify({
+            id: +title.split("ID:")[1].trim(),
+            name: title.split("ID:")[0].trim(),
+            username: username || null,
+            ratings: ratings,
+            info: info,
+        }));
+
+        return {
+            id: +title.split("ID:")[1].trim(),
+            name: title.split("ID:")[0].trim(),
+            username: username || null,
+            ratings: ratings,
+            info: info,
+        };
+    }
+
 }

@@ -34,6 +34,11 @@ describe("Parser", () => {
             htmlFile: "rating.html",
             resultFile: "getPlayers.json",
         },
+        {
+            method: "getPlayerInfo",
+            htmlFile: "player.html",
+            resultFile: "getPlayerInfo.json",
+        },
     ];
 
     tests.forEach(data => {
