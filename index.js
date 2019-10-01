@@ -1,1 +1,3 @@
-export default null;
+import Parser from "./src/parser";
+
+export {Parser};
