@@ -1,13 +1,16 @@
 {
-  "name": "badminton4u-parser",
+  "name": "@damner/badminton4u-parser",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "badminton4u.ru parsing",
   "keywords": [
     "badminton4u"
   ],
   "main": "index.js",
+  "files": [
+    "/src/",
+    "!*.test.js"
+  ],
   "scripts": {
     "test": "jest"
   },
@@ -22,5 +25,16 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damner/badminton4u-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/damner/badminton4u-parser/issues"
+  },
+  "homepage": "https://github.com/damner/badminton4u-parser#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   }
 }
