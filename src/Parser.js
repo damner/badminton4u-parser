@@ -221,14 +221,6 @@ export default class Parser {
             };
         }).get();
 
-        console.log(JSON.stringify({
-            id: +title.split("ID:")[1].trim(),
-            name: title.split("ID:")[0].trim(),
-            username: username || null,
-            ratings: ratings,
-            info: info,
-        }));
-
         return {
             id: +title.split("ID:")[1].trim(),
             name: title.split("ID:")[0].trim(),
