@@ -1,6 +1,6 @@
 # badminton4u-parser
 [![Build Status](https://travis-ci.org/damner/badminton4u-parser.svg?branch=master)](https://travis-ci.org/damner/badminton4u-parser)
-![Build Status](https://github.com/damner/badminton4u-parser/workflows/Test/badge.svg)
+[![Build Status](https://github.com/damner/badminton4u-parser/workflows/Test/badge.svg)](https://github.com/damner/badminton4u-parser/actions?workflow=Test)
 
 Website badminton4u.ru parser for Node.js
 
