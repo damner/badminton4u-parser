@@ -1,4 +1,5 @@
 # badminton4u-parser
+[![Latest release](https://img.shields.io/github/v/release/damner/badminton4u-parser)](https://github.com/damner/badminton4u-parser/releases)
 [![Build Status](https://travis-ci.org/damner/badminton4u-parser.svg?branch=master)](https://travis-ci.org/damner/badminton4u-parser)
 [![Build Status](https://github.com/damner/badminton4u-parser/workflows/Test/badge.svg)](https://github.com/damner/badminton4u-parser/actions?workflow=Test)
 
